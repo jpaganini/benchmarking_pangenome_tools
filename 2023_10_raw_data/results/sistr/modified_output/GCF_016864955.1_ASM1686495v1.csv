@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+,0.09090909090909094,329,SRR1966558,300,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_016864955.1_ASM1686495v1_genomic.fna,GCF_016864955.1_ASM1686495v1,"l	z13","e	n	x","1	9	12",D1,Napoli,Zaiman|Goettingen|Napoli|York|Toronto|Nordrhein,Napoli

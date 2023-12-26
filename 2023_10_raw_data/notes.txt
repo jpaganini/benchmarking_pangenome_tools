@@ -1,0 +1,2 @@
+#Notes regarding STEC fastq files
+The file SRR2299395,SRR4436361 and SRR4436642  was removed due to errors in files

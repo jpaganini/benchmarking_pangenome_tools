@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+2857251859,0.024242424242424288,330,SRR2182934,322,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002386325.1_ASM238632v1_genomic.fna,GCF_002386325.1_ASM238632v1,"e	h","1	2","1	4	[5]	12",B,Saintpaul,Saintpaul|Reading,Saintpaul

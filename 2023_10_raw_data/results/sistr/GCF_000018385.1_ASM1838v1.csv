@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+213092225,0.024242424242424288,330,ERR351251,322,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000018385.1_ASM1838v1_genomic.fna,GCF_000018385.1_ASM1838v1,c,"1,5","6,7,[Vi]",C1,Paratyphi C,Hissar|Choleraesuis|Paratyphi C|Typhisuis|Chiredzi,Paratyphi C

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+707874977,0.036363636363636376,330,ERR178877,318,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_016454585.1_ASM1645458v1_genomic.fna,GCF_016454585.1_ASM1645458v1,"f	g	s",-,"1	4	[5]	12",B,Agona,Derby|Agona|Essen|Budapest,Agona

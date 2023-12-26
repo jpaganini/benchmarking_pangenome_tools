@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+622692032,0.0060606060606061,330,SRR4835098,328,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002208255.1_ASM220825v1_genomic.fna,GCF_002208255.1_ASM220825v1,"e,h","1,5","1,6,14,[25]",H,Onderstepoort,Bahrenfeld|Onderstepoort,Onderstepoort

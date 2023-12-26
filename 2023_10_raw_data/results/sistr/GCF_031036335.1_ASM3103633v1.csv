@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+675252522,0.012121212121212088,330,ERR351252,326,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_031036335.1_ASM3103633v1_genomic.fna,GCF_031036335.1_ASM3103633v1,d,"1,7","1,4,12,27",B,Schwarzengrund,Schwarzengrund,Schwarzengrund

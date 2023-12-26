@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+4036566602,0.018181818181818188,330,SRR1288359,324,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002211565.1_ASM221156v1_genomic.fna,GCF_002211565.1_ASM221156v1,z29,-,"9,46",D2,Ouakam,Ouakam,Ouakam

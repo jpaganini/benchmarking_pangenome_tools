@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+553951548,0.012121212121212088,330,ERR160950,326,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_008727555.1_ASM872755v1_genomic.fna,GCF_008727555.1_ASM872755v1,"z4	z23",-,"8	20",C2-C3,Corvallis,Chailey|Corvallis,Corvallis

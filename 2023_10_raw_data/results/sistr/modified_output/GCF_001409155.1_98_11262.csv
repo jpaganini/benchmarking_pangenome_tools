@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+,0.024242424242424288,329,SRR1778016,322,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_001409155.1_98_11262_genomic.fna,GCF_001409155.1_98_11262,r,z6,"3	{10}{15}",E1,Weltevreden,Weltevreden,Weltevreden

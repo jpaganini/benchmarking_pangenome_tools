@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+3339497192,0.796969696969697,330,SRR1840682,67,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002211845.1_ASM221184v1_genomic.fna,GCF_002211845.1_ASM221184v1,"z4	z23",-,41,S,Waycross,Waycross,Tarshyne

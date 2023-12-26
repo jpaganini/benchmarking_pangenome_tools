@@ -1,0 +1,27 @@
+Preparing the dataset includes:
+1- Keep only ST11 genomes.
+2- Using complete-genomes: 
+    Length of genome
+    Nr. of plasmids // Length of plasmids  
+3- Annotation of genomes 
+    Tool: BAKTA - Outputs a gff formatted output
+    I can do this -> Description of real-gene synteny (Gene order data-strcutre, we will use it to later compare when querying the pangenome)
+
+4- Getting the short-reads from these genomes (DONE)
+4- QC of short-reads
+5- Assemble genomes (Unicycler)
+6- QC on assemblies (BUSCO or CheckM - other?)
+	a- Remove the ones that are contaminated
+7- Summary of assemblies characteristics
+	a- L50 / N50 (Unicycler)
+	b- Length of assembly
+	b- Nr. of contigs
+	c- Nr. of dead ends
+8- Remove genomes with bad assemblies or with bad Short-reads
+9- Annotation of assemblies
+	a- Tool: PROKKA
+10- Find SNPS using Snippy. Sakai genome as reference.
+11- Load data into SnapperDB (Tim's tool)
+12- Make a Phylgenetic tree
+13- subtype then into STEC I/II, Ia, Ib, Ic, etc. (Ask Tim for scripts)
+14- Type the different phages.

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+1473508556,0.030303030303030276,330,SRR1958085,320,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002266205.2_ASM226620v2_genomic.fna,GCF_002266205.2_ASM226620v2,"e	h","1	5","1	9	12",D1,Eastbourne,Bournemouth|Eastbourne|Bergedorf|Waedenswil,Eastbourne

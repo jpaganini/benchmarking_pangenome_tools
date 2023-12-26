@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+2035101809,0.024242424242424288,330,SRR1658078,322,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_028735935.1_ASM2873593v1_genomic.fna,GCF_028735935.1_ASM2873593v1,z10,"e	n	z15","6	7	14",C1,Mbandaka,Djugu|Mbandaka|Telhashomer,Mbandaka

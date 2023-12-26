@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+1645529647,0.00303030303030305,330,SRR1106416,329,salamae,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002211865.1_ASM221186v1_genomic.fna,GCF_002211865.1_ASM221186v1,z39,z39,-,O:55,II O:55:z39:z39,II O:55:z39:z39,II 55:k:z39

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+,0.021212121212121238,329,2018-SEQ-0501,323,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_028893215.1_ASM2889321v1_genomic.fna,GCF_028893215.1_ASM2889321v1,"g	p",-,"1	9	12[Vi]",D1,Dublin,Kiel|Dublin,Dublin

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+2815262734,0.021212121212121238,330,2016-GTA-0138,323,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_009756515.1_ASM975651v1_genomic.fna,GCF_009756515.1_ASM975651v1,i,-,"1	4	[5]	12",B,"I 1	4	[5]	12:i:-","I 1	4	[5]	12:i:-","I 1	4	[5]	12:i:-"

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+4184836647,0.5303030303030303,330,17-3539,155,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000486445.2_ASM48644v2_genomic.fna,GCF_000486445.2_ASM48644v2,z35,z6,"1	4	12	27",B,Sloterdijk,Sloterdijk,Eschberg

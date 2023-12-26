@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+3053648214,0.08484848484848484,330,SRR3721546,302,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_900477895.1_47022_G01_genomic.fna,GCF_900477895.1_47022_G01,"l	v","e	n	x",17,J,Carmel,Carmel|Granlo,Carmel

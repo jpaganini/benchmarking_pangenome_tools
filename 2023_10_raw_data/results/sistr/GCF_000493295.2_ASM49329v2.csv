@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+3462508657,0.033333333333333326,330,SRR1023847,319,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000493295.2_ASM49329v2_genomic.fna,GCF_000493295.2_ASM49329v2,z,"1,6","1,13,22",G,Poona,Poona|Farmsen,Poona

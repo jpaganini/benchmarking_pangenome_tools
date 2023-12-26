@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+3479498091,0.015151515151515138,330,SRR4835072,325,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_001975305.1_ASM197530v1_genomic.fna,GCF_001975305.1_ASM197530v1,"e	h","1	2","6	8	20",C2-C3,Newport,Newport|Bardo|Ferruch|Kottbus,Newport

@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+1182505454,0.039393939393939426,330,ERR578473,317,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_028747825.1_ASM2874782v1_genomic.fna,GCF_028747825.1_ASM2874782v1,d,-,"9	12[Vi]",D1,Typhi,Typhi,Typhi

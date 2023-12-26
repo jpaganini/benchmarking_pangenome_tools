@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+2715211489,0.027272727272727226,330,SRR3049034,321,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_012053725.1_ASM1205372v1_genomic.fna,GCF_012053725.1_ASM1205372v1,z,"1	7","1	4	12",B,Indiana,Indiana,Indiana

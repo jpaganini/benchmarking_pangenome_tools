@@ -1,0 +1,37 @@
+1. Build Pangenomes with different tools using all high-quality complete genomes:
+    ggCaller (Protein)
+    BAKTA + Panaroo (Protein)
+    Bifrost (ccDBGs)
+    CuttleFish2	(ccDBGs)
+    Pangraph (MSA)
+    Others (?)
+
+2. Evaluate tools based on:
+    a- Graphs caracteristics:
+	1- Nr. of nodes
+	2- Length of nodes
+	3- Nr. edges
+	4- Nr. of nodes with different degrees
+	5- Other metrics to evaluate and compare complexity of graphs
+
+    b-Computing metrics: Time and memory consumed by each tool
+    c-For tools that annotate genes:
+	1. Is gene syntenty retained correctly?- QUESTION: Syntenty for tools that use DNA? Maybe align the path thru the graph to the original genome.
+	2. Do gene clusters frequently contain paralogs (FP) or miss true genes (FNs)? - GOLD standard? 	
+    d-Is it even possible to recover each sequence as an individual path?
+	
+3. Querying the graph with short-read data:
+	The idea is to re-build a highly reliable pangeome graph with a subset of complete genomes. Then, with the remaining set of genomes,'
+        try to query (or add) with short-read assemblies.
+    a. SELECT TOOLS: Panaroo, Graphaligner, ggcaller, graphite, graphaligner, minigraph, minimap2(?), OTHERS(?)
+    b. When adding the short-read assembled genomes:
+	1. Does gene- or DNA-syntenty retains?
+           i. GOLD standard for GENE syntenty. Orginally annotated complete genome.
+           ii. GOLD standard for DNA syntenty. Has to be defined how. (maybe using a variation graph, so you use the complete genome as reference, and align the path thru the pangenome graph to it)
+    c. What happens to gene anntoations? When comparing to the original complete genome, do we get more fake genes (FP) or do we miss genes (FNs)?
+    d. Are there some particular genomes that present more difficulties to query?
+	1. Related to high number of repeated elements // assembly quality // other
+
+    e. Is there a long-read selection strategy for the genomes? 
+	a- Selecting a random subset of genomes to build the graph.
+	b- Based on phylogy and accessory genome composition.

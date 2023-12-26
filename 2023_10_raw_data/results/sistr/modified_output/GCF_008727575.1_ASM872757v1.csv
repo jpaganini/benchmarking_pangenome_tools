@@ -1,0 +1,2 @@
+cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
+1384134936,0.033333333333333326,330,SRR1122641,319,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_008727575.1_ASM872757v1_genomic.fna,GCF_008727575.1_ASM872757v1,"g	[s]	t",-,"1	3	19",E4,Senftenberg,Senftenberg,Senftenberg
