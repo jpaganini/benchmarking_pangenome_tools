@@ -5,23 +5,25 @@ import csv
 
 #ggcaller
 # Reading ggcaler GML file
-ggcaller_file_path = '/hpc/uu_vet_iras/pliu/ggcaller_result/final_graph.gml'
+ggcaller_file_path = '../2023_10_raw_data/results/ggcaller_result/final_graph.gml'
 ggcaller_graph = nx.read_gml(ggcaller_file_path)
 
 # Query the number of nodes and edges
 num_nodes = ggcaller_graph.number_of_nodes()
 num_edges = ggcaller_graph.number_of_edges()
+print("ggcaller finished")
 
 #Panaroo
 # Reading panaroo GML file
-panaroo_file_path = '/hpc/uu_vet_iras/pliu/panaroo_bakta_result/final_graph.gml'
+panaroo_file_path = '../2023_10_raw_data/results/panaroo_bakta_result/final_graph.gml'
 panaroo_graph = nx.read_gml(panaroo_file_path)
 
-#Pangraph
 # Query the number of nodes and edges
 num_nodes = panaroo_graph.number_of_nodes()
 num_edges = panaroo_graph.number_of_edges()
+print("Panaroo finished")
 
+#Pangraph
 def pangraph_to_igraph(gfa_file):
     # Creating a igraph
     pangraph_graph = ig.Graph()
@@ -34,7 +36,7 @@ def pangraph_to_igraph(gfa_file):
 
     with open(gfa_file, 'r') as file:
         # Adding a progress bar with tqdm
-        for line in tqdm(file, desc="Processing GFA", unit=" lines", total=total_lines):
+        for line in tqdm(file, desc="Processing Pangraph", unit=" lines", total=total_lines):
             if line.startswith('S'):  # Node 
                 _, node_id, _, _, _, = line.strip().split('\t')
                 pangraph_graph.add_vertex(name=node_id)
@@ -52,7 +54,7 @@ def pangraph_to_igraph(gfa_file):
 
     return pangraph_graph
 
-#PPanGGOLiN
+# PPanGGOLiN
 def PPanGGOLiN_to_igraph(input_file):
     # Creating an igraph
     graph = ig.Graph()
@@ -62,15 +64,15 @@ def PPanGGOLiN_to_igraph(input_file):
 
     # Used to keep track of nodes that have been added to avoid duplicate additions
     added_nodes = set()
+    total_lines = sum(1 for line in open(input_file, 'r'))
 
     with open(input_file, 'r') as file:
-        for line in tqdm(file, desc="Processing New Format", unit=" lines"):
+        for line in tqdm(file, desc="Processing PPanGGOLiN", unit=" lines", total=total_lines):
             # Process nodes
             if '<node' in line and 'id=' in line:
                 node_id = line.split('id="')[1].split('"')[0]
                 node_label = line.split('label="')[1].split('"')[0]
                 graph.add_vertex(name=node_id, label=node_label)
-                print(node_id)
                 added_nodes.add(node_id)
 
             # Process edges
@@ -88,6 +90,7 @@ def PPanGGOLiN_to_igraph(input_file):
 
     return graph
 
+
 #bifrost
 def bifrost_to_igraph(gfa_file):
     # Creating a igraph
@@ -101,7 +104,7 @@ def bifrost_to_igraph(gfa_file):
 
     with open(gfa_file, 'r') as file:
         # Adding a progress bar with tqdm
-        for line in tqdm(file, desc="Processing GFA", unit=" lines", total=total_lines):
+        for line in tqdm(file, desc="Processing bifrost", unit=" lines", total=total_lines):
             if line.startswith('S'):  # Node 
                 _, node_id, sequence = line.strip().split('\t')
                 graph.add_vertex(name=node_id, sequence=sequence)
@@ -120,9 +123,45 @@ def bifrost_to_igraph(gfa_file):
 
     return graph
 
+#cuttlefish
+def cuttlefish_to_igraph(gfa_file):
+    # Creating an igraph
+    graph = ig.Graph()
+
+    # Used to keep track of edges that have been added to avoid duplicate additions
+    added_edges = set()
+
+    # Get total number of lines in this file
+    total_lines = sum(1 for line in open(gfa_file, 'r'))
+
+    with open(gfa_file, 'r') as file:
+        # Process lines starting with 'S'
+        for line in tqdm(file, desc="Processing cuttlefish nodes", unit=" lines", total=total_lines):
+            if line.startswith('S'):  # Node 
+                _, node_id, sequence, _ = line.strip().split('\t')
+                graph.add_vertex(name=node_id, sequence=sequence)
+
+        # Reset file pointer to the beginning of the file for processing 'L' lines
+        file.seek(0)
+
+        # Process lines starting with 'L'
+        for line in tqdm(file, desc="Processing cuttlefish edges", unit=" lines", total=total_lines):
+            if line.startswith('L'):  # Edge
+                _, source, source_orient, target, target_orient, length = line.strip().split('\t')
+
+                # Remove same but opposite edges 
+                forward_edge = (source, target, source_orient, target_orient)
+                reverse_edge = (target, source, '-' if target_orient == '+' else '+', '-' if source_orient == '+' else '+')
+
+                if forward_edge not in added_edges and reverse_edge not in added_edges:
+                    graph.add_edge(source, target, source_orient=source_orient, target_orient=target_orient)
+                    added_edges.add(forward_edge)
+
+    return graph
+
 #ggcaller
 # Write the result to the TSV file
-ggcaller_output_file_path = '/hpc/uu_vet_iras/pliu/enqury_result/ggcaller_results.tsv'
+ggcaller_output_file_path = '../2023_10_raw_data/results/query_result/ggcaller_results.tsv'
 with open(ggcaller_output_file_path, 'w', newline='') as output_file:
     writer = csv.writer(output_file, delimiter='\t')
 
@@ -138,11 +177,10 @@ with open(ggcaller_output_file_path, 'w', newline='') as output_file:
         degree = ggcaller_graph.degree(node)
         writer.writerow([node, degree])
 
-print(f"Results written to {ggcaller_output_file_path}")
 
 #panaroo
 # rite the result to the TSV file
-panaroo_output_file_path = '/hpc/uu_vet_iras/pliu/enqury_result/panaroo_results.tsv'
+panaroo_output_file_path = '../2023_10_raw_data/results/query_result/panaroo_results.tsv'
 with open(panaroo_output_file_path, 'w', newline='') as output_file:
     writer = csv.writer(output_file, delimiter='\t')
 
@@ -158,14 +196,13 @@ with open(panaroo_output_file_path, 'w', newline='') as output_file:
         degree = panaroo_graph.degree(node)
         writer.writerow([node, degree])
 
-print(f"Results written to {panaroo_output_file_path}")
 
 #pangraph
-pangraph_file_path = '/hpc/uu_vet_iras/pliu/pangraph_uncompressed_result/pangraph.gfa'
+pangraph_file_path = '../2023_10_raw_data/results/pangraph_result/pangraph.gfa'
 pangraph_output_igraph = pangraph_to_igraph(pangraph_file_path)
 
 # Write result ro tsv file
-pangraph_output_file_path = '/hpc/uu_vet_iras/pliu/enqury_result/pangraph_results.tsv'
+pangraph_output_file_path = '../2023_10_raw_data/results/query_result/pangraph_results.tsv'
 
 # Write no. of node to outputfile
 with open(pangraph_output_file_path, 'w') as output_file:
@@ -176,16 +213,16 @@ with open(pangraph_output_file_path, 'a') as output_file:
     output_file.write(f"Number of edges: {pangraph_output_igraph.ecount()}\n")
 
 # Write degree of node to outputfile
-node_degrees = list(zip(pangraph_output_igraph.vs["name"], pangraph_output_igraph.degree()))  # 修改此处为vs["name"]
+node_degrees = list(zip(pangraph_output_igraph.vs["name"], pangraph_output_igraph.degree()))  
 with open(pangraph_output_file_path, 'a') as output_file:
     output_file.write(f"Node degrees: {node_degrees}\n")
 
 #PPanGGOLiN
-PPanGGOLiN_file_path = '/hpc/uu_vet_iras/pliu/ppanggolin_result/result/pangenomeGraph.gexf'  # 替换为实际文件路径
+PPanGGOLiN_file_path = '../2023_10_raw_data/results/ppanggolin_result/pangenomeGraph.gexf' 
 PPanGGOLiN_output_igraph = PPanGGOLiN_to_igraph(PPanGGOLiN_file_path)
 
 # Write the results to a TSV file
-PPanGGOLiN_output_file_path = '/hpc/uu_vet_iras/pliu/enqury_result/PPanGGOLiN_results.tsv'
+PPanGGOLiN_output_file_path = '../2023_10_raw_data/results/query_result/PPanGGOLiN_results.tsv'
 
 # Write the number of nodes to the output file
 with open(PPanGGOLiN_output_file_path, 'w') as output_file:
@@ -196,16 +233,16 @@ with open(PPanGGOLiN_output_file_path, 'a') as output_file:
     output_file.write(f"Number of edges: {PPanGGOLiN_output_igraph.ecount()}\n")
 
 # Write node degree to output file
-node_degrees = list(zip(PPanGGOLiN_output_igraph.vs["name"], PPanGGOLiN_output_igraph.degree(mode="in")))  # 使用 degree(mode="in")
+node_degrees = list(zip(PPanGGOLiN_output_igraph.vs["name"], PPanGGOLiN_output_igraph.degree(mode="in"))) 
 with open(PPanGGOLiN_output_file_path, 'a') as output_file:
     output_file.write(f"Node in-degrees: {node_degrees}\n")
 
 #bifrost
-bifrost_file_path = '/hpc/uu_vet_iras/pliu/bifrost_result/bifrost_graph.gfa'
+bifrost_file_path = '../2023_10_raw_data/results/bifrost_result/bifrost_graph.gfa'
 bifrost_output_igraph = bifrost_to_igraph(bifrost_file_path)
 
 # Write result ro tsv file
-bifrost_output_file_path = '/hpc/uu_vet_iras/pliu/enqury_result/bifrost_results.tsv'
+bifrost_output_file_path = '../2023_10_raw_data/results/query_result/bifrost_results.tsv'
 
 # Write no. of node to outputfile
 with open(bifrost_output_file_path, 'w') as output_file:
@@ -216,8 +253,29 @@ with open(bifrost_output_file_path, 'a') as output_file:
     output_file.write(f"Number of edges: {bifrost_output_igraph.ecount()}\n")
 
 # Write degree of node to outputfile
-node_degrees = list(zip(bifrost_output_igraph.vs["name"], bifrost_output_igraph.degree()))  # 修改此处为vs["name"]
+node_degrees = list(zip(bifrost_output_igraph.vs["name"], bifrost_output_igraph.degree())) 
 with open(bifrost_output_file_path, 'a') as output_file:
+    output_file.write(f"Node degrees: {node_degrees}\n")
+
+
+#cuttlefish
+cuttlefish_file_path = '../2023_10_raw_data/results/cuttlefish_result/cuttlefish_gfa1.gfa1'
+cuttlefish_output_igraph = cuttlefish_to_igraph(cuttlefish_file_path)
+
+# Write result ro tsv file
+cuttlefish_output_file_path = '../2023_10_raw_data/results/query_result/cuttlefish_gfa1.tsv'
+
+# Write no. of node to outputfile
+with open(cuttlefish_output_file_path, 'w') as output_file:
+    output_file.write(f"Number of nodes: {cuttlefish_output_igraph.vcount()}\n")
+
+# Write no. of edge to outputfile
+with open(cuttlefish_output_file_path, 'a') as output_file:
+    output_file.write(f"Number of edges: {cuttlefish_output_igraph.ecount()}\n")
+
+# Write degree of node to outputfile
+node_degrees = list(zip(cuttlefish_output_igraph.vs["name"], cuttlefish_output_igraph.degree())) 
+with open(cuttlefish_output_file_path, 'a') as output_file:
     output_file.write(f"Node degrees: {node_degrees}\n")
 
 
