@@ -1,0 +1,580 @@
+
+#code
+#bar_plot
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene <- read.csv("C:/Users/DELL/Desktop/benchmark/core and accessory.csv")
+print(gene)
+gene_long <- pivot_longer(gene, cols = c(Core, Accessory), names_to = "Type", values_to = "Genes_count")
+
+gene_long <- rename(gene_long, Genome_Type = X)
+
+print(gene_long)
+# Set Core and Accessory genes at same praph
+p <- ggplot(
+  data = gene_long,
+  mapping = aes(x = Genome_Type, fill = Type)
+) +
+  geom_bar(mapping = aes(x = Type, y = Genes_count), position = "dodge", stat = "identity", width = 0.3) +
+  labs(x = "Gene Type", y = "Genes Count") +
+  facet_wrap(~ Genome_Type, dir = "v", ncol = 3)+
+  scale_fill_manual(values = c("Accessory" = "#169873", "Core" = "#6aa84f", "Shell" = "#274e13"))+
+  theme(aspect.ratio = 0.3)+
+  coord_cartesian(ylim = c(0, max(gene_long$Genes_count)))
+print(ggplot())
+
+ggsave("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/output_plot.png", plot = p, width = 9, height = 10, units = "in", dpi = 300)
+```
+
+#bar_plot_percentage
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene <- read.csv("C:/Users/DELL/Desktop/benchmark/core and accessory.csv")
+print(gene)
+gene_long <- pivot_longer(gene, cols = c(Core, Accessory), names_to = "Type", values_to = "Genes_count")
+
+gene_long <- rename(gene_long, Genome_Type = X)
+
+gene_long$Sequence <- factor(gene_long$Sequence,levels=c("Short_read_assembly","Combination_1%_complete","Combination_10%_complete","Combination_50%_complete","Combination_90%_complete","Combination_99%_complete","Complete_genome"))
+
+print(gene_long)
+# 将Core、Accessory和Shell的数量显示在同一张柱状图上
+a <- ggplot(
+  data = gene_long,
+  mapping = aes(fill = Type)
+) +
+  geom_bar(mapping = aes(x = Sequence, y = Genes_count), position = "fill", stat = "identity", width = 0.8, alpha = 4/5)+
+  facet_wrap(~ Tool, dir = "h")+
+  scale_fill_manual(values = c("Accessory" = "#169873", "Core" = "#6aa84f", "Shell" = "#274e13"))+
+  theme(aspect.ratio = 0.6)+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+ggsave("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/output_plot2.png", plot = a, width = 20, height = 10, units = "in", dpi = 300)  
+```
+
+#line_plot
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+base <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/basic_information.csv")
+print(base)
+base$Percentage.of.Complete.genome <- factor(base$Percentage.of.Complete.genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+ggplot(base, aes(Percentage.of.Complete.genome, Subgraph.Count, colour = Tool, group = Tool, shape = Method)) +
+  geom_line(size = 1) + geom_point(size = 4) + scale_y_continuous(trans = "log10")
+  
+#ggplot(base %>% filter(Tool %in% c("bifrost", "cuttlefish")), aes(Percentage.of.Complete.genome, Q3.Q1, colour = Tool, group = Tool, shape = Method)) +
+  #geom_line(size = 1) + geom_point(size = 4) + scale_y_continuous(trans = "log10")
+  
+
+```
+
+#bar_plot
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene <- read.csv("C:/Users/DELL/Desktop/benchmark/core and accessory.csv")
+print(gene)
+gene_long <- pivot_longer(gene, cols = c(Core, Accessory), names_to = "Gene_Type", values_to = "Genes_count")
+
+gene_long <- rename(gene_long, Genome_Type = X)
+
+gene_long$Sequence <- factor(gene_long$Sequence,levels=c("Short_read_assembly","Combination_1%_complete","Combination_10%_complete","Combination_50%_complete","Combination_90%_complete","Combination_99%_complete","Complete_genome"))
+
+print(gene_long)
+# Set Core and Accessory genes at same praph
+p <- ggplot(
+  data = gene_long,
+  mapping = aes(x = Tool, fill = Gene_Type)
+) +
+  geom_bar(mapping = aes(x = Sequence, y = Genes_count), position = "dodge", stat = "identity", width = 0.5) +
+  labs(x = "Dataset_Type", y = "Genes_Count") +
+  facet_wrap(~ Tool, dir = "v",)+
+  scale_fill_manual(values = c("Accessory" = "#274e13", "Core" = "#6aa84f", "Shell" = "#169873"))+
+  theme(aspect.ratio = 0.2)+
+  coord_cartesian(ylim = c(0, max(gene_long$Genes_count)))+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+
+  geom_line(mapping = aes(x = Sequence, y = Genes_count, colour = Gene_Type, group = Gene_Type), linetype = "dashed")+
+  scale_color_manual(values = c("Accessory" = "#274e13", "Core" = "#6aa84f", "Shell" = "#169873"))
+print(p)
+```
+
+#box_plot
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene_length <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/merged_length_results.csv")
+print(gene_length)
+
+ggplot(gene_length, aes(Source, Length, group = Source)) +
+  geom_boxplot(fill="#69b3a2")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+
+  scale_y_continuous(trans = "log10")
+
+
+
+
+
+```
+#density_plot
+```{r fig.width=20,fig.height=4}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene_length <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/merged_cuttlefish_length_results.csv")
+print(gene_length)
+
+filtered_gene_length <- gene_length %>%
+  filter(length < 100)
+
+ggplot(filtered_gene_length, aes(x = length, fill = Source)) + geom_density(alpha = 0.3)
+
+ggplot(filtered_gene_length, aes(x = length, fill = Source)) + 
+  geom_histogram(bins = 30) +
+  scale_fill_brewer(palette = "Set1")+
+  facet_wrap(~ Source, dir = "h", ncol=7)
+```
+
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+
+gene_degree <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/merged_degree_results.csv")
+print(gene_degree)
+
+filtered_gene_degree <- gene_degree %>%
+  filter(Degree < 10)
+filtered_gene_degree$Source <- factor(filtered_gene_degree$Source,levels=c("0%_complete","1%_complete","10%_complete","50%_complete","90%_complete","99%_complete","100%_complete"))
+
+ggplot(filtered_gene_degree, aes(x = Degree), fill= ..count..) + 
+  geom_histogram(width = 0.01, binwidth=0.5, alpha=0.9) +
+  facet_grid(Source ~ Tool, scales = "free_y")+
+  scale_y_continuous(trans = "log10")+
+  scale_x_continuous(breaks = seq(0, 10, by = 1))+
+  labs(x = "Degree (lower 10)", y = "Frequency (log10)")
+
+```
+
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+basic_information <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/basic_information.csv")
+print(basic_information)
+
+basic_information_change <- pivot_longer(basic_information, cols = c(Node.Count, Edge.Count), names_to = "Basic_Information", values_to = "Count")
+print(basic_information_change)
+
+basic_information_change$Percentage.of.Complete.genome <- factor(basic_information_change$Percentage.of.Complete.genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+ggplot(basic_information_change, aes(x = Percentage.of.Complete.genome, y = Count, fill = Percentage.of.Complete.genome, colour = Percentage.of.Complete.genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  scale_color_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  theme_bw() +
+  facet_grid(Tool ~ Basic_Information, scales = "free_y") +
+    theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10)) +
+  geom_line(data = basic_information_change, aes(x = Percentage.of.Complete.genome, y = Count, colour = "#353839", group = Basic_Information), linetype = "dashed")
+  
+
+
+
+
+```
+
+```{r fig.width=6,fig.height=8}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+basic_information_change <- read.csv("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/basic_information.csv")
+print(basic_information_change)
+
+
+basic_information_change$Percentage.of.Complete.genome <- factor(basic_information_change$Percentage.of.Complete.genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+basic_information_change$Tool <- factor(basic_information_change$Tool,levels=c("bifrost","cuttlefish","panaroo","PPanGGOLiN","ggcaller","pangraph"))
+
+ggplot(basic_information_change, aes(x = Percentage.of.Complete.genome, y = Subgraph.Count, fill = Percentage.of.Complete.genome, colour = Percentage.of.Complete.genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  scale_color_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  theme_bw() +
+  facet_wrap(~ Tool, scales = "free_y", dir = "v", ncol=1) +
+    theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10)) +
+  geom_line(data = basic_information_change, aes(x = Percentage.of.Complete.genome, y = Subgraph.Count, colour = "#353839", group = Tool), linetype = "dashed")
+
+
+
+```
+
+
+
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+nodes_degree_complete <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/complete_genome_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete<-nodes_degree_complete %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete$fraction<-'100%'
+nodes_degree_draft <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/assembly_analysis/result/degree_results.csv", sep =',')
+nodes_degree_draft<-nodes_degree_draft %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_draft$fraction<-'0%'
+nodes_degree_complete_1 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_1%_complete_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete_1<-nodes_degree_complete_1 %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete_1$fraction<-'1%'
+nodes_degree_complete_10 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_10%_complete_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete_10<-nodes_degree_complete_10 %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete_10$fraction<-'10%'
+nodes_degree_complete_50 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_50%_complete_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete_50<-nodes_degree_complete_50 %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete_50$fraction<-'50%'
+nodes_degree_complete_90 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_90%_complete_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete_90<-nodes_degree_complete_90 %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete_90$fraction<-'90%'
+nodes_degree_complete_99 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_99%_complete_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete_99<-nodes_degree_complete_99 %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete_99$fraction<-'99%'
+
+all_degree<-rbind(nodes_degree_complete,nodes_degree_complete_1,nodes_degree_complete_10,nodes_degree_complete_50,nodes_degree_complete_90,nodes_degree_complete_99,nodes_degree_draft)
+all_degree<-all_degree %>% group_by(Tool,fraction) %>% mutate(total_nodes=sum(Node_Count))
+all_degree$Node_Fraction<-round(all_degree$Node_Count/all_degree$total_nodes,2)
+
+all_degree_plot_data<-all_degree[as.integer(all_degree$Degree)<=10,]
+
+all_degree_plot_data$fraction<-factor(all_degree_plot_data$fraction,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+all_degree_plot<-ggplot(all_degree_plot_data, aes(x=as.integer(Degree), y=Node_Fraction, fill=as.factor(Degree))) + geom_bar(stat='identity') +
+  theme_bw()+
+  scale_fill_viridis(discrete = TRUE)+
+  theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10))  +
+  labs(fill='') +
+   xlab('Node degree (lower 10)') + 
+  ylab('') +
+  scale_x_continuous(breaks = seq(0, 10, by = 1))+
+  facet_grid(Tool~fraction,scales = 'free') #+ theme(strip.text.x = element_text(size = 12))
+
+all_degree_plot
+
+
+```
+
+ 
+```{r fig.width=12,fig.height=8}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+nodes_size_complete <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/complete_genome_analysis/result/size_results.csv", sep =',')
+nodes_size_complete<-nodes_size_complete %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete$fraction<-'100%'
+nodes_size_draft <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/assembly_analysis/result/size_results.csv", sep =',')
+nodes_size_draft<-nodes_size_draft %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_draft$fraction<-'0%'
+nodes_size_complete_1 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_1%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_1<-nodes_size_complete_1 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_1$fraction<-'1%'
+nodes_size_complete_10 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_10%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_10<-nodes_size_complete_10 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_10$fraction<-'10%'
+nodes_size_complete_50 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_50%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_50<-nodes_size_complete_50 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_50$fraction<-'50%'
+nodes_size_complete_90 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_90%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_90<-nodes_size_complete_90 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_90$fraction<-'90%'
+nodes_size_complete_99 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_99%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_99<-nodes_size_complete_99 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_99$fraction<-'99%'
+
+all_size<-rbind(nodes_size_complete,nodes_size_complete_1,nodes_size_complete_10,nodes_size_complete_50,nodes_size_complete_90,nodes_size_complete_99,nodes_size_draft)
+all_size<-all_size %>% group_by(Tool,fraction) %>% mutate(total_nodes=sum(Node_Count))
+all_size$Node_Fraction<-round(all_size$Node_Count/all_size$total_nodes,2)
+print(all_size)
+all_size_plot_data<-all_size[as.integer(all_size$Size) <= 10 ,]
+
+all_size_plot_data$fraction<-factor(all_size_plot_data$fraction,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+all_size_plot<-ggplot(all_size_plot_data, aes(x=as.integer(Size), y=Node_Fraction, fill=as.factor(Size))) + geom_bar(stat='identity') +
+  theme_bw()+
+  scale_fill_viridis(discrete = TRUE)+
+  theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10))  +
+  labs(fill='') +
+  scale_x_continuous(breaks = seq(0, 10, by = 2))+
+  xlab('Node Size') + 
+  ylab('') +
+  facet_grid(Tool~fraction,scales = 'free') #+ theme(strip.text.x = element_text(size = 12))
+
+all_size_plot
+```
+
+```{r fig.width=10,fig.height=8}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+nodes_size_complete <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/complete_genome_analysis/result/size_results.csv", sep =',')
+nodes_size_complete<-nodes_size_complete %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete$fraction<-'100%'
+nodes_size_draft <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/assembly_analysis/result/size_results.csv", sep =',')
+nodes_size_draft<-nodes_size_draft %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_draft$fraction<-'0%'
+nodes_size_complete_1 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_1%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_1<-nodes_size_complete_1 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_1$fraction<-'1%'
+nodes_size_complete_10 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_10%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_10<-nodes_size_complete_10 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_10$fraction<-'10%'
+nodes_size_complete_50 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_50%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_50<-nodes_size_complete_50 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_50$fraction<-'50%'
+nodes_size_complete_90 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_90%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_90<-nodes_size_complete_90 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_90$fraction<-'90%'
+nodes_size_complete_99 <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/combination_99%_complete_analysis/result/size_results.csv", sep =',')
+nodes_size_complete_99<-nodes_size_complete_99 %>% group_by(Tool,Size) %>% summarise(Node_Count=n())
+nodes_size_complete_99$fraction<-'99%'
+
+all_size<-rbind(nodes_size_complete,nodes_size_complete_1,nodes_size_complete_10,nodes_size_complete_50,nodes_size_complete_90,nodes_size_complete_99,nodes_size_draft)
+all_size<-all_size %>% group_by(Tool,fraction) %>% mutate(total_nodes=sum(Node_Count))
+all_size$Node_Fraction<-round(all_size$Node_Count)
+print(all_size)
+all_size_plot_data<-all_size[as.integer(all_size$Size)>160,]
+
+all_size_plot_data$fraction<-factor(all_size_plot_data$fraction,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+all_size_absolute_plot<-ggplot(all_size_plot_data, aes(x=as.integer(Size), y=Node_Fraction, fill=as.factor(Size))) + geom_bar(stat='identity') +
+  theme_bw()+
+  scale_fill_viridis(discrete = TRUE)+
+  theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10))  +
+  labs(fill='') +
+   xlab('Node Size') + 
+  ylab('') +
+  facet_grid(Tool~fraction,scales = 'free') #+ theme(strip.text.x = element_text(size = 12))
+
+all_size_absolute_plot
+
+
+```
+
+#Degree plot just complete genome
+```{r fig.width=8,fig.height=10}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+nodes_degree_complete <- read.delim("C:/Users/DELL/Desktop/benchmark/tool_remove_bad/complete_genome_analysis/result/degree_results.csv", sep =',')
+nodes_degree_complete<-nodes_degree_complete %>% group_by(Tool,Degree) %>% summarise(Node_Count=n())
+nodes_degree_complete$fraction<-'100%'
+
+nodes_degree_complete<-nodes_degree_complete %>% group_by(Tool) %>% mutate(total_nodes=sum(Node_Count))
+nodes_degree_complete$Node_Fraction<-round(nodes_degree_complete$Node_Count/nodes_degree_complete$total_nodes,2)
+
+nodes_degree_complete<-nodes_degree_complete[as.integer(nodes_degree_complete$Degree)<=10,]
+
+nodes_degree_complete
+
+nodes_degree_complete$Tool <- factor(nodes_degree_complete$Tool,levels=c("bifrost","cuttlefish","panaroo","PPanGGOLiN","ggcaller","pangraph"))
+
+degree_plot_complete<-ggplot(nodes_degree_complete, aes(x=as.integer(Degree), y=Node_Fraction, fill=as.factor(Degree))) + geom_bar(stat='identity') +
+  theme_bw()+
+  scale_fill_viridis(discrete = TRUE)+
+  theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10))  +
+  labs(fill='') +
+   xlab('Node degree (lower 10)') + 
+  ylab('') +
+  facet_wrap(~ Tool, dir = "v", ncol=1)+ #+ theme(strip.text.x = element_text(size = 12))
+   scale_x_continuous(breaks = seq(0, 10, by = 1))
+
+degree_plot_complete
+
+
+
+
+```
+
+
+#memory_occupied
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+basic_information <- read.csv("C:/Users/DELL/Desktop/benchmark/Cup_time_memory.csv")
+print(basic_information)
+
+basic_information_change <- pivot_longer(basic_information, cols = c(MaxRSS, MaxVMSize), names_to = "Basic_occupied", values_to = "Count")
+print(basic_information_change)
+
+basic_information_change$percentage_complete_genome <- factor(basic_information_change$percentage_complete_genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+ggplot(basic_information_change, aes(x = percentage_complete_genome, y = Count, fill = percentage_complete_genome, colour = percentage_complete_genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  scale_color_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  theme_bw() +
+  facet_grid(Tool ~ Basic_occupied) +
+    theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10)) +
+  geom_line(data = basic_information_change, aes(x = percentage_complete_genome, y = Count, colour = "#353839", group = Basic_occupied), linetype = "dashed")
+  
+
+
+
+
+```
+
+
+#cpu_occupied
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+basic_information <- read.csv("C:/Users/DELL/Desktop/benchmark/Cup_time_memory.csv")
+print(basic_information)
+
+basic_information_change <- pivot_longer(basic_information, cols = c(Total_cpu_second
+), names_to = "Basic_occupied", values_to = "Count")
+print(basic_information_change)
+
+basic_information_change$percentage_complete_genome <- factor(basic_information_change$percentage_complete_genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+ggplot(basic_information_change, aes(x = percentage_complete_genome, y = Count, fill = percentage_complete_genome, colour = percentage_complete_genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#e5d0ff", "1%" = "#dabcff", "10%" = "#cca3ff", "50%" = "#bf8bff", "90%" = "#9e4a9e", "99%" = "#872e87", "100%" = "#711971")) +
+  scale_color_manual(values = c("0%" = "#e5d0ff", "1%" = "#dabcff", "10%" = "#cca3ff", "50%" = "#bf8bff", "90%" = "#9e4a9e", "99%" = "#872e87", "100%" = "#711971")) +
+  theme_bw() +
+  facet_grid(Tool ~ Basic_occupied) +
+    theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=12), 
+        axis.text.x=element_text(size=10,angle=0),
+        axis.title.y=element_text(size=0), 
+        axis.text.y=element_text(size=8,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 10)) +
+  geom_line(data = basic_information_change, aes(x = percentage_complete_genome, y = Count, colour = "#353839", group = Basic_occupied), linetype = "dashed")
+  
+
+
+
+
+```
+
+
+
+
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+base <- read.csv("C:/Users/DELL/Desktop/benchmark/Cup_time_memory.csv")
+print(base)
+base <- pivot_longer(base, cols = c(Total_cpu_second), names_to = "Basic_occupied", values_to = "Total_cpu_second")
+print(basic_information_change)
+
+base$percentage_complete_genome <- factor(base$percentage_complete_genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+ggplot(base, aes(percentage_complete_genome, Total_cpu_second, colour = Tool, group = Tool, shape = Method)) +
+  geom_line(size = 1) + geom_point(size = 4) + ylab('Total cpu time (log10)') + xlab('Percentage of complete genome') + scale_y_continuous(trans = "log10")
+  
+#ggplot(base %>% filter(Tool %in% c("bifrost", "cuttlefish")), aes(Percentage.of.Complete.genome, Q3.Q1, colour = Tool, group = Tool, shape = Method)) +
+  #geom_line(size = 1) + geom_point(size = 4) + scale_y_continuous(trans = "log10")
+
+```
