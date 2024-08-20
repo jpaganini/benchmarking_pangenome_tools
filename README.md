@@ -24,5 +24,6 @@ https://zenodo.org/records/13345365
 2. The node length information in the cuttlefish graph is stored in the following link:
 https://zenodo.org/records/13351559
 
-The files in these two links (1,2) should be downloaded in the following directory:
+The files in these two links (1,2) should be downloaded in the following directory: 
+2024_8_pangenome_benchmark/source_data/pangenome_analysis_and_plot
 
