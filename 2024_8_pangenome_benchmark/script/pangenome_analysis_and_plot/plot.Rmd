@@ -1,0 +1,363 @@
+
+#code
+#bar_plot
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+gene <- read.csv("../../source_data/pangenome_analysis_and_plot/core_and_accessory.csv")
+print(gene)
+gene_long <- pivot_longer(gene, cols = c(Core, Accessory), names_to = "Gene_Type", values_to = "Genes_count")
+
+gene_long <- rename(gene_long, Genome_Type = X)
+
+gene_long$Sequence <- factor(gene_long$Sequence,levels=c("Short_read_assembly","Combination_1%_complete","Combination_11%_complete","Combination_50%_complete","Combination_89%_complete","Combination_99%_complete","Complete_genome"))
+
+print(gene_long)
+# Set Core and Accessory genes at same praph
+p <- ggplot(
+  data = gene_long,
+  mapping = aes(x = Tool, fill = Gene_Type)
+) +
+  geom_bar(mapping = aes(x = Sequence, y = Genes_count), position = "dodge", stat = "identity", width = 0.5) +
+  labs(x = "Dataset_Type", y = "Genes_Count") +
+  facet_wrap(~ Tool, dir = "v",)+
+  scale_fill_manual(values = c("Accessory" = "#274e13", "Core" = "#6aa84f", "Shell" = "#169873"))+
+  theme(aspect.ratio = 0.2)+
+  coord_cartesian(ylim = c(0, max(gene_long$Genes_count)))+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+
+  scale_color_manual(values = c("Accessory" = "#274e13", "Core" = "#6aa84f", "Shell" = "#169873"))
+print(p)
+```
+
+#density_plot_bifrost
+```{r fig.width=20,fig.height=4}
+
+library(ggplot2)
+library(dplyr)
+
+# read data
+gene_length <- read.csv("../../source_data/pangenome_analysis_and_plot/merged_bifrost_length_results.csv")
+
+# filter data
+filtered_gene_length <- gene_length %>%
+  filter(length > 1000 & length < 5000)
+
+
+options(repr.plot.width=20, repr.plot.height=4)
+
+# create plot
+p1 <- ggplot(filtered_gene_length, aes(x = length, color = Source)) + 
+  geom_density(alpha = 0.3, size = 1.4) +  
+  labs(x = "Node Length (bp)", 
+       y = "Density",  
+       color = "Source") + 
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 16),    
+    axis.text.y = element_text(size = 16),    
+    axis.title.x = element_text(size = 18),   
+    axis.title.y = element_text(size = 18),   
+    legend.text = element_text(size = 14)     
+  )
+
+# 绘制直方图
+p2 <- ggplot(filtered_gene_length, aes(x = length, color = Source)) + 
+  geom_histogram(bins = 30, size = 0.5) +  
+  facet_wrap(~ Source, dir = "h", ncol = 7) +
+  labs(x = "Node Length (bp)",  
+       y = "Frequency",  
+       color = "Source") +  
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 16),    
+    axis.text.y = element_text(size = 16),    
+    axis.title.x = element_text(size = 18),  
+    axis.title.y = element_text(size = 18),   
+    legend.text = element_text(size = 14)     
+  )
+
+# 显示图形
+print(p1)
+print(p2)
+
+
+
+
+```
+#density_plot_cuttlefish
+```{r fig.width=20,fig.height=4}
+
+library(ggplot2)
+library(dplyr)
+
+# read data
+gene_length <- read.csv("../../source_data/pangenome_analysis_and_plot/merged_cuttlefish_length_results.csv")
+
+# filter data
+filtered_gene_length <- gene_length %>%
+  filter(length > 1000 & length < 5000)
+
+
+options(repr.plot.width=20, repr.plot.height=4)
+
+# create plot
+p1 <- ggplot(filtered_gene_length, aes(x = length, color = Source)) + 
+  geom_density(alpha = 0.3, size = 1.4) +  
+  labs(x = "Node Length (bp)", 
+       y = "Density",  
+       color = "Source") + 
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 16),    
+    axis.text.y = element_text(size = 16),    
+    axis.title.x = element_text(size = 18),   
+    axis.title.y = element_text(size = 18),   
+    legend.text = element_text(size = 14)     
+  )
+
+# 绘制直方图
+p2 <- ggplot(filtered_gene_length, aes(x = length, color = Source)) + 
+  geom_histogram(bins = 30, size = 0.5) +  
+  facet_wrap(~ Source, dir = "h", ncol = 7) +
+  labs(x = "Node Length (bp)",  
+       y = "Frequency",  
+       color = "Source") +  
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 16),    
+    axis.text.y = element_text(size = 16),    
+    axis.title.x = element_text(size = 18),  
+    axis.title.y = element_text(size = 18),   
+    legend.text = element_text(size = 14)     
+  )
+
+# 显示图形
+print(p1)
+print(p2)
+
+```
+
+# bar plot of edges & nodes
+```{r fig.width=10,fig.height=8}
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+# read data
+basic_information <- read.csv("../../source_data/pangenome_analysis_and_plot/basic_information.csv")
+print(basic_information)
+
+# transfer data
+basic_information_change <- pivot_longer(basic_information, cols = c(Node.Count, Edge.Count), names_to = "Basic_Information", values_to = "Count")
+print(basic_information_change)
+
+
+basic_information_change$Percentage.of.Complete.genome <- factor(basic_information_change$Percentage.of.Complete.genome, levels = c("0%", "1%", "10%", "50%", "90%", "99%", "100%"))
+
+# re-ranking tool columns
+basic_information_change$Tool <- factor(basic_information_change$Tool, levels = c("panaroo", "PPanGGOLiN", "ggcaller", "bifrost", "cuttlefish", "pangraph"))
+
+
+ggplot(basic_information_change, aes(x = Percentage.of.Complete.genome, y = Count, fill = Percentage.of.Complete.genome, colour = Percentage.of.Complete.genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  scale_color_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  theme_bw() +
+  facet_grid(Tool ~ Basic_Information, scales = "free_y") +
+  theme(
+    plot.title = element_text(size = 0, hjust = 0.5, face = 'bold'),
+    axis.title.x = element_text(size = 18), 
+    axis.text.x = element_text(size = 13, angle = 0),
+    axis.title.y = element_text(size = 18),  # 修改 y 轴标题的大小
+    axis.text.y = element_text(size = 12, angle = 0), 
+    legend.title = element_text(size = 12), 
+    legend.text = element_text(size = 9),
+    legend.position = 'none',
+    strip.text.x = element_text(size = 15),
+    strip.text.y = element_text(size = 12)
+  ) +
+  labs(y = "Count")  # 添加 y 轴标题
+
+
+
+
+
+```
+
+# bar plot of subgraphs
+```{r fig.width=6,fig.height=8}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+basic_information_change <- read.csv("../../source_data/pangenome_analysis_and_plot/basic_information.csv")
+print(basic_information_change)
+
+
+basic_information_change$Percentage.of.Complete.genome <- factor(basic_information_change$Percentage.of.Complete.genome,levels=c("0%","1%","10%","50%","90%","99%","100%"))
+
+basic_information_change$Tool <- factor(basic_information_change$Tool,levels=c("bifrost","cuttlefish","panaroo","PPanGGOLiN","ggcaller","pangraph"))
+
+ggplot(basic_information_change, aes(x = Percentage.of.Complete.genome, y = Subgraph.Count, fill = Percentage.of.Complete.genome, colour = Percentage.of.Complete.genome)) + 
+  geom_bar(position = "dodge", stat = "identity", width = 0.5) +
+  scale_fill_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  scale_color_manual(values = c("0%" = "#daf8e3", "1%" = "#97ebdb", "10%" = "#00c2c7", "50%" = "#00e9ff", "90%" = "#00b0ff", "99%" = "#0086ad", "100%" = "#005582")) +
+  theme_bw() +
+  facet_wrap(~ Tool, scales = "free_y", dir = "v", ncol=1) +
+    theme(plot.title = element_text(size=0,hjust = 0.5,face='bold'),
+        axis.title.x = element_text(size=18), 
+        axis.text.x=element_text(size=13,angle=0),
+        axis.title.y=element_text(size=18), 
+        axis.text.y=element_text(size=12,angle=0), 
+        legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 9),
+        legend.position='none',
+        strip.text.x = element_text(size = 15),
+        strip.text.y = element_text(size = 10))+
+  labs(y = "Count")  # 添加 y 轴标题
+
+
+```
+
+#Degree plot just complete genome
+```{r fig.width=8,fig.height=10}
+
+library(ggplot2)
+library(tidyr)
+library(viridis)
+library(dplyr)
+
+nodes_degree_complete <- read.delim("../../result/pangenome_analysis_and_plot/pure_complete/degree_results.csv", sep =',')
+nodes_degree_complete <- nodes_degree_complete %>% group_by(Tool, Degree) %>% summarise(Node_Count = n())
+nodes_degree_complete$fraction <- '100%'
+
+nodes_degree_complete <- nodes_degree_complete %>% group_by(Tool) %>% mutate(total_nodes = sum(Node_Count))
+nodes_degree_complete$Node_Fraction <- round(nodes_degree_complete$Node_Count / nodes_degree_complete$total_nodes, 2)
+
+nodes_degree_complete <- nodes_degree_complete[as.integer(nodes_degree_complete$Degree) <= 10,]
+
+nodes_degree_complete
+
+nodes_degree_complete$Tool <- factor(nodes_degree_complete$Tool, levels = c("bifrost", "cuttlefish", "panaroo", "PPanGGOLiN", "ggcaller", "pangraph"))
+
+degree_plot_complete <- ggplot(nodes_degree_complete, aes(x = as.integer(Degree), y = Node_Fraction, fill = as.factor(Degree))) +
+  geom_bar(stat = 'identity') +
+  theme_bw() +
+  scale_fill_viridis(discrete = TRUE) +
+  theme(
+    plot.title = element_text(size = 0, hjust = 0.5, face = 'bold'),
+    axis.title.x = element_text(size = 18),  
+    axis.text.x = element_text(size = 15, angle = 0),  
+    axis.title.y = element_text(size = 18),  
+    axis.text.y = element_text(size = 15, angle = 0), 
+    legend.title = element_text(size = 18),
+    legend.text = element_text(size = 15),
+    legend.position = 'none',
+    strip.text.x = element_text(size = 18),
+    strip.text.y = element_text(size = 18)
+  ) +
+  labs(fill = '') +
+  xlab('Node degree (lower 10)') +
+  ylab('Node Fraction') +  
+  facet_wrap(~ Tool, dir = "v", ncol = 1) +
+  scale_x_continuous(breaks = seq(0, 10, by = 1))
+
+degree_plot_complete
+
+
+
+
+
+```
+
+# plot of cpu occupied
+```{r fig.width=6,fig.height=4}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+
+base <- read.csv("../../source_data/cpu_memory_occupied/Cup_time_memory.csv")
+
+
+base$percentage_complete_genome <- factor(base$percentage_complete_genome, levels = c("0%", "1%", "10%", "50%", "90%", "99%", "100%"))
+
+# only save 0%，50%，100%
+base_filtered <- base %>% filter(percentage_complete_genome %in% c("0%", "50%", "100%"))
+
+
+base_long <- pivot_longer(base_filtered, cols = c(Total_cpu_second), names_to = "Metric", values_to = "Value")
+
+
+custom_colors <- c("#f02943", "#e458aa", "#cd03cc", "#9726eb", "#4c24ea", "#0817af")
+
+
+ggplot(base_long, aes(x = percentage_complete_genome, y = Value, colour = Tool, group = interaction(Tool, Metric), shape = Method)) +
+  geom_line(size = 1, linetype = "dashed") +
+  geom_point(size = 3) +  
+  ylab('Total_cpu_second(s) (log10) ') +
+  xlab('Percentage of complete genome') +
+  facet_wrap(~ Metric, scales = "free_y") +
+  scale_colour_manual(values = custom_colors) +
+  scale_y_log10() +  
+  theme_minimal() +
+  theme(
+    axis.line = element_line(color = "black"), 
+    axis.title.x = element_text(size = 14),  
+    axis.title.y = element_text(size = 14)  
+  )
+
+
+
+
+```
+
+# plot of memory occupied
+```{r fig.width=6,fig.height=4}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+
+base <- read.csv("../../source_data/cpu_memory_occupied/Cup_time_memory.csv")
+
+
+base$percentage_complete_genome <- factor(base$percentage_complete_genome, levels = c("0%", "1%", "10%", "50%", "90%", "99%", "100%"))
+
+# only save 0%，50%，100%
+base_filtered <- base %>% filter(percentage_complete_genome %in% c("0%", "50%", "100%"))
+
+
+base_long <- pivot_longer(base_filtered, cols = c(MaxRSS), names_to = "Metric", values_to = "Value")
+
+
+custom_colors <- c("#f02943", "#e458aa", "#cd03cc", "#9726eb", "#4c24ea", "#0817af")
+
+
+ggplot(base_long, aes(x = percentage_complete_genome, y = Value, colour = Tool, group = interaction(Tool, Metric), shape = Method)) +
+  geom_line(size = 1, linetype = "dashed") +
+  geom_point(size = 3) +  
+  ylab('Memory(B) (log10) ') +
+  xlab('Percentage of complete genome') +
+  facet_wrap(~ Metric, scales = "free_y") +
+  scale_colour_manual(values = custom_colors) +
+  scale_y_log10() +  
+  theme_minimal() +
+  theme(
+    axis.line = element_line(color = "black"), 
+    axis.title.x = element_text(size = 14),  
+    axis.title.y = element_text(size = 14)  
+  )
+
+
+
+
+```
+
+
+
