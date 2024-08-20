@@ -19,7 +19,7 @@ degree_output_file_path = os.path.join(input_path, 'degree_results.csv')
 panaroo_file_path = os.path.join(input_path, 'panaroo_final_graph.gml')
 PPanGGOLiN_file_path = os.path.join(input_path, 'pangenomeGraph.gexf')
 ggcaller_file_path = os.path.join(input_path, 'ggcaller_final_graph.gml')
-bifrost_file_path = os.path.join(input_path, 'bifrost.gfa')
+bifrost_file_path = os.path.join(input_path, 'bifrost_combination.gfa')
 cuttlefish_file_path = os.path.join(input_path, 'cuttlefish_2.gfa1')
 pangraph_file_path = os.path.join(input_path, 'pangraph.gfa')
 
