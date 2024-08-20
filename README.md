@@ -16,3 +16,13 @@ BE CAREFUL! BECAUSE READS TAKE ONE DAY TO DOWNLOAD.
 -Find more metadata of the genomes in the following repo: benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/metadata
 
 -Find a list of potential steps to follow in this repo at: benchmark_pangenome_graphs/2023_10_raw_data/steps.txt
+
+
+# Pangenome graph plot
+1. The files for storing the pangenome graph are stored at the following link:
+https://zenodo.org/records/13345365
+2. The node length information in the cuttlefish graph is stored in the following link:
+https://zenodo.org/records/13351559
+
+The files in these two links (1,2) should be downloaded in the following directory:
+
