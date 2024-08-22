@@ -23,7 +23,11 @@ BE CAREFUL! BECAUSE READS TAKE ONE DAY TO DOWNLOAD.
 https://zenodo.org/records/13345365
 2. The node length information in the cuttlefish graph is stored in the following link:
 https://zenodo.org/records/13351559
-
 The files in these two links (1,2) should be downloaded in the following directory: 
 2024_8_pangenome_benchmark/source_data/pangenome_analysis_and_plot
+
+3. The stx gene in ggcaller panaroo, ppanggolin is stored in the following link:
+https://zenodo.org/records/13363371
+The files in this link should be download in the following directory:
+
 
