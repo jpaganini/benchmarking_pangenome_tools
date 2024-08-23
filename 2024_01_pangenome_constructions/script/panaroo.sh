@@ -7,15 +7,21 @@
 #SBATCH -c 16
 #SBATCH --gres=tmpspace:40G
 #SBATCH --mail-type=all
+#SBATCH --mail-user=p.liu1@students.uu.nl
 #SBATCH --job-name=panaroo
 #SBATCH --error=slurm-%j_sistr.err
 #SBATCH --output=slurm-%j_sistr.out
 
-# Make input file directory
-mkdir ../../2023_10_raw_data/results/panaroo_input
+mkdir /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination
 
-# Copy gff3 files from bakta result to input file directory
-for i in ../../2023_10_raw_data/results/bakta_result/*; do cp $i/*.gff3 ../../2023_10_raw_data/results/panaroo_input; done
+mkdir /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination/panaroo_combination_input
 
-# Run panaroo
-panaroo -i ../../2023_10_raw_data/results/panaroo_input/*.gff3 -o ../../2023_10_raw_data/results/panaroo_result -t 16 --clean-mode strict --merge_paralogs --remove-invalid-genes 
+cd /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/assembly_bakta
+
+for i in *;do cp $i/*.gff3 /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination/panaroo_combination_input;done
+
+cd /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/complete_bakta
+
+for i in *;do cp $i/*.gff3 /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination/panaroo_combination_input;done
+
+panaroo -i /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination/panaroo_combination_input/*.gff3 -o /hpc/uu_vet_iras/pliu/remove_bad_result/combination_2_assembly/panaroo_combination -t 16 --clean-mode strict --remove-invalid-genes

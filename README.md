@@ -16,3 +16,24 @@ BE CAREFUL! BECAUSE READS TAKE ONE DAY TO DOWNLOAD.
 -Find more metadata of the genomes in the following repo: benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/metadata
 
 -Find a list of potential steps to follow in this repo at: benchmark_pangenome_graphs/2023_10_raw_data/steps.txt
+
+
+# Pangenome graph plot
+1. The files for storing the pangenome graph are stored at the following link:
+https://zenodo.org/records/13345365
+2. The node length information in the cuttlefish graph is stored in the following link:
+https://zenodo.org/records/13351559
+
+The files in these two links (1,2) should be downloaded in the following directory: 
+2024_8_pangenome_benchmark/source_data/pangenome_analysis_and_plot
+
+# stx gene 
+1. The stx gene in ggcaller panaroo, ppanggolin is stored in the following link:
+https://zenodo.org/records/13363371
+
+The files in this link should be download in the following directory:
+2024_8_pangenome_benchmark/result/stx
+
+2. The stx script should first run 2024_8_pangenome_benchmark/script/stx/merged_virulencefinder_blast_bakta_panaroo.py, followed by 2024_8_pangenome_benchmark/script/stx/merge_all.py
+3. The complete stx gene information is stored in 2024_8_pangenome_benchmark/result/stx/merge_all_stx_infor.csv
+
