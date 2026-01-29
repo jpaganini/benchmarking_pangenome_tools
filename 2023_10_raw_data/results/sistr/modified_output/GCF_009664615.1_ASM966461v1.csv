@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-2000276230,0.027272727272727226,330,SRR1966769,321,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_009664615.1_ASM966461v1_genomic.fna,GCF_009664615.1_ASM966461v1,c,"1	6","6	7",C1,Birkenhead,Birkenhead|Brindisi,Birkenhead

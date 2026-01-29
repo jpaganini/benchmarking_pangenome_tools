@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-4142896761,0.0636363636363636,330,17-5636,309,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_003429425.1_ASM342942v1_genomic.fna,GCF_003429425.1_ASM342942v1,a,"1	5","1	9	12",D1,Miami,Paratyphi A|Miami|Sendai|Detmold,Miami

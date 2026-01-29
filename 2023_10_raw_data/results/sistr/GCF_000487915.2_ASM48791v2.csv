@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-3255486084,0.009090909090909038,330,SRR3323116,327,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000487915.2_ASM48791v2_genomic.fna,GCF_000487915.2_ASM48791v2,k,"1,5",11,F,Abaetetuba,Galiema|Thompson|Pretoria|Abaetetuba,Abaetetuba

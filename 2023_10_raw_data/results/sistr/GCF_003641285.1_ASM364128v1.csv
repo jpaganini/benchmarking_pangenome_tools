@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-568358260,0.015151515151515138,330,SRR1299219,325,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_003641285.1_ASM364128v1_genomic.fna,GCF_003641285.1_ASM364128v1,"g,m,s",-,"6,7,14,[54]",C1,Montevideo,Montevideo|Othmarschen|Plumaugat,Montevideo

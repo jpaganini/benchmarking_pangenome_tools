@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-1724404451,0.018181818181818188,330,SRR3465357,324,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_006461325.2_ASM646132v2_genomic.fna,GCF_006461325.2_ASM646132v2,r,"1,5","6,8,20",C2-C3,Bovismorbificans,Bsilla|Hindmarsh|Bovismorbificans,Bovismorbificans

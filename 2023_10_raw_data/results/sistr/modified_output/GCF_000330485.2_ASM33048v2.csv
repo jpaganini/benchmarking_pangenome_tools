@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-2176467689,0.045454545454545414,330,2015-SEQ-0419,315,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000330485.2_ASM33048v2_genomic.fna,GCF_000330485.2_ASM33048v2,"g	m",-,"1	9	12",D1,Gallinarum,Nitra|Gallinarum|Pullorum|Berta|Enteritidis|Blegdam|Gueuletapee|Naestved|Rostock|Hillingdon,Gallinarum

@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-3338130566,0.6878787878787879,330,SRR2133175,103,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_002208315.1_ASM220831v1_genomic.fna,GCF_002208315.1_ASM220831v1,c,"e,n,z15",44,V,Quebec,Quebec,Give

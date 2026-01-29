@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-2523967496,0.018181818181818188,330,SRR5120744,324,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_003067985.2_ASM306798v2_genomic.fna,GCF_003067985.2_ASM306798v2,"l,z28","1,5","1,9,12",D1,Javiana,Koessen|Mendoza|Houston|Panama|Victoria|Itami|Javiana|India,Javiana

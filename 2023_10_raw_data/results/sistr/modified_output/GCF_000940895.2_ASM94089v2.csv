@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-1375353937,0.012121212121212088,330,17-7878,326,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_000940895.2_ASM94089v2_genomic.fna,GCF_000940895.2_ASM94089v2,"e	h","1	6","3	{10}{15}{15	34}",E1,Anatum,Anatum|Hayindogo,Anatum
