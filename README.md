@@ -1,18 +1,50 @@
-# benchmarking_pangenome_tools
+## Exploring the differences across pangenome-graph representations using Escherichia coli O157:H7 as a model
 
--Find reads of STEC E. coli at: /hpc/uu_vet_iras/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/sra_files/stec
 
--Find corresponding complete genomes at: /hpc/uu_vet_iras/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/stec
+Run **2025_12_manuscript_analysis/src/01_STEC_data_analysis.Rmd** to reproduce:
 
-IMPORTANT:
-You will see that names between reads and complete genomes differ (Despite the fact that they belong to the same sample). Find the relations between these names in this git repo, in the file: 
+-Figure 1
 
-benchmark_pangenome_graphs/2023_10_raw_data/results/stec_info/biosamples_strains_o157_h7.txt. 
+-Supplementary Table S2
 
-Here: 1st column is the fastq-name and 3rd column is the corresponding fasta-name. Using this file you could change the names of the fastq-files to match complete-genomes (if you prefer!). 
+-Tree metadata
 
-BE CAREFUL! BECAUSE READS TAKE ONE DAY TO DOWNLOAD.
 
--Find more metadata of the genomes in the following repo: benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/metadata
+Run **2025_12_manuscript_analysis/src/03_plot_pangenome_comparison.Rmd** to reproduce:
 
--Find a list of potential steps to follow in this repo at: benchmark_pangenome_graphs/2023_10_raw_data/steps.txt
+-Figure 2
+
+-Supplementary Figure S1
+
+-Supplementary table S3
+
+-Supplementary table S4
+
+-Supplementary table S5
+
+
+Run **2025_12_manuscript_analysis/src/04_plot_draft_pangenome_comparison.Rmd** to reproduce:
+
+-Figure 3
+
+-Figure 4
+
+-Figure 5
+
+-Supplementary Figure S2
+
+-Supplementary table S6
+
+
+Run **2025_12_manuscript_analysis/src/05_stx_recovery.Rmd** to reproduce:
+-Fugure 6
+-Supplementary table S7
+
+
+### If required, all pangenome graphs can be downloaded from:
+
+
+https://doi.org/10.5281/zenodo.18405233
+
+**Any questions can be addressed to:**
+j.a.paganini@uu.nl

@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-2062693963,0.024242424242424288,330,2015-SEQ-0145,322,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_005160365.1_ASM516036v1_genomic.fna,GCF_005160365.1_ASM516036v1,i,"1	2",-,B,Typhimurium|Lagos,Typhimurium|Lagos,"I 1	4	[5]	12:i:-"

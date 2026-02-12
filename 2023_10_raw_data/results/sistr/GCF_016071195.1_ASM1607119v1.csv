@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-1580514589,0.7515151515151515,330,SRR1958365,82,enterica,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_016071195.1_ASM1607119v1_genomic.fna,GCF_016071195.1_ASM1607119v1,z29,-,-,E4,Jedburgh|Llandoff,Jedburgh|Llandoff,Albany

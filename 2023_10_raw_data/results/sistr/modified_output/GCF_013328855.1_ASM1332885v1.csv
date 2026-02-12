@@ -1,2 +1,0 @@
-cgmlst_ST,cgmlst_distance,cgmlst_found_loci,cgmlst_genome_match,cgmlst_matching_alleles,cgmlst_subspecies,fasta_filepath,genome,h1,h2,o_antigen,serogroup,serovar,serovar_antigen,serovar_cgmlst
-,0.00303030303030305,329,SRR1106423,329,diarizonae,/hpc/dla_mm/jpaganini/data/benchmark_pangenome_graphs/2023_10_raw_data/data/complete_genomes/senterica/GCF_013328855.1_ASM1332885v1_genomic.fna,GCF_013328855.1_ASM1332885v1,k,"1	5	7",-,O:61,"IIIb O:61:k:1	5	7","IIIb O:61:k:1	5	7","IIIb 61:k:1	5	7"

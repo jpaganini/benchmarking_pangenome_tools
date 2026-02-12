@@ -1,0 +1,273 @@
+Folder,Database,Virulence factor,Identity,Query / Template length,Contig,Position in contig,Protein function,Accession number
+SRR3195839,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP017436.1 Escherichia coli O157:H7 strain 2149 chromosome, complete genome",1967110..1968350,   stx2c-O157-FLY16,AB015057
+SRR6929606,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028690.1 Escherichia coli strain 109 chromosome, complete genome",1795014..1796240,   stx1a-O157-GPU96MM,AB035142
+SRR6929606,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028690.1 Escherichia coli strain 109 chromosome, complete genome",3431919..3433159,   stx2a-O157-EDL933,X07865
+SRR6929627,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028656.1 Escherichia coli strain 121 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR14419381,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP076243.1 Escherichia coli O157:H7 strain Balcarce_14.2 chromosome, complete genome",1544755..1545995,   stx2a-O157-EDL933,X07865
+SRR14419381,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP076243.1 Escherichia coli O157:H7 strain Balcarce_14.2 chromosome, complete genome",2074087..2075327,   stx2c-O157-FLY16,AB015057
+SRR6929614,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028647.1 Escherichia coli strain 130 chromosome, complete genome",1980414..1981654,   stx2c-O157-FLY16,AB015057
+SRR6929638,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028614.1 Escherichia coli strain 141 chromosome, complete genome",1980079..1981319,   stx2c-O157-FLY16,AB015057
+DRR381740,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026108.1 Escherichia coli strain CEC13091 chromosome, complete genome",3224155..3225395,   stx2a-O157-EDL933,X07865
+SRR4301571,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038287.1 Escherichia coli O157:H7 strain TX 376-2 chromosome, complete genome",1981678..1982918,   stx2c-O157-FLY16,AB015057
+SRR15415578,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_CP038380.1 Escherichia coli O157:H7 strain E32511 chromosome, complete genome",2030637..2031877,   stx2c-O157-E32511,M59432
+SRR6929610,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028700.1 Escherichia coli strain 105 chromosome, complete genome",1793596..1794822,   stx1a-O157-GPU96MM,AB035142
+SRR6929610,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028700.1 Escherichia coli strain 105 chromosome, complete genome",3451217..3452457,   stx2a-O157-EDL933,X07865
+SRR15415624,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038346.1 Escherichia coli O157:H7 strain G5295 chromosome, complete genome",1566270..1567510,   stx2a-O157-EDL933,X07865
+SRR15415624,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038346.1 Escherichia coli O157:H7 strain G5295 chromosome, complete genome",2065931..2067171,   stx2c-O157-FLY16,AB015057
+SRR7439153,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP104639.1 Escherichia coli strain PNUSAE014970 chromosome, complete genome",253278..254504,   stx1a-O157-GPU96MM,AB035142
+SRR7439153,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP104639.1 Escherichia coli strain PNUSAE014970 chromosome, complete genome",4055051..4056291,   stx2a-O157-EDL933,X07865
+SRR6929631,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028668.1 Escherichia coli strain 117 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR3195840,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP017444.1 Escherichia coli O157:H7 strain 8368 chromosome, complete genome",1794831..1796057,   stx1a-O157-GPU96MM,AB035142
+SRR3195840,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP017444.1 Escherichia coli O157:H7 strain 8368 chromosome, complete genome",3429210..3430450,   stx2a-O157-EDL933,X07865
+SRR6929609,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028698.1 Escherichia coli strain 106 chromosome, complete genome",1796349..1797575,   stx1a-O157-GPU96MM,AB035142
+SRR6929609,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028698.1 Escherichia coli strain 106 chromosome, complete genome",3430319..3431559,   stx2a-O157-EDL933,X07865
+SRR15277999,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP089032.1 Escherichia coli O157:H7 strain 6535WT chromosome, complete genome",1891329..1892555,   stx1a-O157-GPU96MM,AB035142
+SRR15277999,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP089032.1 Escherichia coli O157:H7 strain 6535WT chromosome, complete genome",1562620..1563860,   stx2a-O157-EDL933,X07865
+SRR15277999,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP089032.1 Escherichia coli O157:H7 strain 6535WT chromosome, complete genome",3592289..3593529,   stx2a-O157-EDL933,X07865
+SRR4301577,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038292.1 Escherichia coli O157:H7 strain TB21-1 chromosome, complete genome",1979070..1980310,   stx2c-O157-FLY16,AB015057
+SRR6929618,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028635.1 Escherichia coli strain 134 chromosome, complete genome",1980304..1981544,   stx2c-O157-FLY16,AB015057
+SRR4301494,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038302.1 Escherichia coli O157:H7 strain SS TX 313-1 chromosome, complete genome",1985312..1986552,   stx2c-O157-FLY16,AB015057
+SRR13160359,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP066756.1 Escherichia coli O157:H7 strain ECP19-798 chromosome, complete genome",1743657..1744883,   stx1a-O157-GPU96MM,AB035142
+SRR13160359,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP066756.1 Escherichia coli O157:H7 strain ECP19-798 chromosome, complete genome",3393366..3394606,   stx2a-O157-EDL933,X07865
+SRR15415547,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038398.1 Escherichia coli O157:H7 strain DEC4E chromosome, complete genome",1791465..1792691,   stx1a-O157-FLY16,AF461168
+SRR6118141,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP089031.1 Escherichia coli strain 7386Nal chromosome, complete genome",1551458..1552698,   stx2a-O157-EDL933,X07865
+SRR6118141,virulence_ecoli,stx2a-O157-EDL933,99.68,1241 / 1241,"NZ_CP089031.1 Escherichia coli strain 7386Nal chromosome, complete genome",2082153..2083393,   stx2a-O157-EDL933,X07865
+SRR6929601,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028677.1 Escherichia coli strain 114 chromosome, complete genome",1980299..1981539,   stx2c-O157-FLY16,AB015057
+SRR15376149,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062758.1 Escherichia coli O157:H7 strain Z892 chromosome, complete genome",1551642..1552882,   stx2a-O157-EDL933,X07865
+SRR15376149,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062758.1 Escherichia coli O157:H7 strain Z892 chromosome, complete genome",2043856..2045096,   stx2c-O157-FLY16,AB015057
+SRR15376141,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062733.1 Escherichia coli O157:H7 strain Z1767 chromosome, complete genome",1559322..1560562,   stx2a-O157-EDL933,X07865
+SRR15376141,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062733.1 Escherichia coli O157:H7 strain Z1767 chromosome, complete genome",2051340..2052580,   stx2c-O157-FLY16,AB015057
+SRR3205757,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP034799.1 Escherichia coli strain 2009C-4687 chromosome, complete genome",3645106..3646346,   stx2a-O157-EDL933,X07865
+SRR3205757,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP034799.1 Escherichia coli strain 2009C-4687 chromosome, complete genome",4173170..4174410,   stx2c-O157-FLY16,AB015057
+SRR15415573,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038313.1 Escherichia coli O157:H7 strain OK1 chromosome, complete genome",1792047..1793273,   stx1a-O157-GPU96MM,AB035142
+SRR15415573,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038313.1 Escherichia coli O157:H7 strain OK1 chromosome, complete genome",3361187..3362427,   stx2a-O157-EDL933,X07865
+SRR15376146,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062749.1 Escherichia coli O157:H7 strain Z1486 chromosome, complete genome",1557983..1559223,   stx2a-O157-EDL933,X07865
+SRR15376146,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062749.1 Escherichia coli O157:H7 strain Z1486 chromosome, complete genome",2051318..2052558,   stx2c-O157-FLY16,AB015057
+SRR6118142,virulence_ecoli,stx2a-O157-EDL933,99.68,1241 / 1241,"NZ_CP089036.1 Escherichia coli O157:H7 strain 7386WT chromosome, complete genome",1551465..1552705,   stx2a-O157-EDL933,X07865
+SRR6118142,virulence_ecoli,stx2a-O157-EDL933,99.68,1241 / 1241,"NZ_CP089036.1 Escherichia coli O157:H7 strain 7386WT chromosome, complete genome",2082188..2083428,   stx2a-O157-EDL933,X07865
+SRR6929634,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP028600.1 Escherichia coli strain 147 chromosome, complete genome",1550069..1551309,   stx2a-O157-EDL933,X07865
+SRR15376145,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062752.1 Escherichia coli O157:H7 strain Z910 chromosome, complete genome",1560524..1561764,   stx2a-O157-EDL933,X07865
+SRR15376145,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062752.1 Escherichia coli O157:H7 strain Z910 chromosome, complete genome",2053859..2055099,   stx2c-O157-FLY16,AB015057
+SRR15277995,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP089034.1 Escherichia coli O157:H7 strain 6535NalR chromosome, complete genome",1867521..1868747,   stx1a-O157-GPU96MM,AB035142
+SRR15277995,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP089034.1 Escherichia coli O157:H7 strain 6535NalR chromosome, complete genome",1562620..1563860,   stx2a-O157-EDL933,X07865
+SRR15277995,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP089034.1 Escherichia coli O157:H7 strain 6535NalR chromosome, complete genome",3587617..3588857,   stx2a-O157-EDL933,X07865
+SRR6929619,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028632.1 Escherichia coli strain 135 chromosome, complete genome",1980306..1981546,   stx2c-O157-FLY16,AB015057
+SRR4301497,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP038366.1 Escherichia coli O157:H7 strain F6667 chromosome, complete genome",1566172..1567412,   stx2a-O157-EDL933,X07865
+SRR4301497,virulence_ecoli,stx2a-ONT-EK9900,99.92,1241 / 1241,"NZ_CP038366.1 Escherichia coli O157:H7 strain F6667 chromosome, complete genome",1566172..1567412,   stx2a-ONT-EK9900,AF461171
+SRR4301497,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038366.1 Escherichia coli O157:H7 strain F6667 chromosome, complete genome",2090442..2091682,   stx2c-O157-FLY16,AB015057
+SRR4301521,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038309.1 Escherichia coli O157:H7 strain Show KS 470-1 chromosome, complete genome",1978909..1980149,   stx2c-O157-FLY16,AB015057
+SRR4301521,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038309.1 Escherichia coli O157:H7 strain Show KS 470-1 chromosome, complete genome",2036322..2037562,   stx2c-O157-FLY16,AB015057
+SRR15376142,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062736.1 Escherichia coli O157:H7 strain Z1766 chromosome, complete genome",1559333..1560573,   stx2a-O157-EDL933,X07865
+SRR15376142,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062736.1 Escherichia coli O157:H7 strain Z1766 chromosome, complete genome",2051352..2052592,   stx2c-O157-FLY16,AB015057
+SRR23929852,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP120944.1 Escherichia coli O157:H7 str. EDL933 chromosome, complete genome",1743556..1744782,   stx1a-O157-GPU96MM,AB035142
+SRR15376153,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062771.1 Escherichia coli O157:H7 strain Z570 chromosome, complete genome",1556658..1557898,   stx2a-O157-EDL933,X07865
+SRR15376153,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062771.1 Escherichia coli O157:H7 strain Z570 chromosome, complete genome",2049992..2051232,   stx2c-O157-FLY16,AB015057
+SRR3191403,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP016625.1 Escherichia coli O157:H7 strain FRIK944 chromosome, complete genome",3187914..3189140,   stx1a-O157-FLY16,AF461168
+SRR3191403,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP016625.1 Escherichia coli O157:H7 strain FRIK944 chromosome, complete genome",2900798..2902038,   stx2c-O157-FLY16,AB015057
+DRR381743,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026110.1 Escherichia coli strain CEC08123 chromosome, complete genome",3076484..3077724,   stx2a-O157-EDL933,X07865
+SRR6929602,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028680.1 Escherichia coli strain 113 chromosome, complete genome",1980225..1981465,   stx2c-O157-FLY16,AB015057
+SRR6929612,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028623.1 Escherichia coli strain 138 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR4301562,virulence_ecoli,stx2c-O157-FLY16,100,1085 / 1241,"NZ_CP039834.1 Escherichia coli O157:H7 strain MB41-1 chromosome, complete genome",2029041..2030125,   stx2c-O157-FLY16,AB015057
+SRR15415622,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038342.1 Escherichia coli O157:H7 strain H2495 chromosome, complete genome",1793735..1794961,   stx1a-O157-GPU96MM,AB035142
+SRR15415622,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038342.1 Escherichia coli O157:H7 strain H2495 chromosome, complete genome",3449252..3450492,   stx2a-O157-EDL933,X07865
+SRR15415621,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038339.1 Escherichia coli O157:H7 strain H6437 chromosome, complete genome",1572508..1573748,   stx2a-O157-EDL933,X07865
+SRR25603930,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133130.1 Escherichia coli O157:H7 strain PNUSAE146744 chromosome, complete genome",1745155..1746381,   stx1a-O157-GPU96MM,AB035142
+SRR25603930,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133131.1 Escherichia coli O157:H7 strain PNUSAE146744 plasmid unnamed2, complete sequence",19113..20353,   stx2a-O157-EDL933,X07865
+SRR6929620,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028629.1 Escherichia coli strain 136 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR3195851,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP017434.1 Escherichia coli O157:H7 strain 1130 chromosome, complete genome",1969897..1971137,   stx2c-O157-FLY16,AB015057
+SRR15376144,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062746.1 Escherichia coli O157:H7 strain Z1504 chromosome, complete genome",1557880..1559120,   stx2a-O157-EDL933,X07865
+SRR15376144,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062746.1 Escherichia coli O157:H7 strain Z1504 chromosome, complete genome",2051215..2052455,   stx2c-O157-FLY16,AB015057
+SRR2914455,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP015842.1 Escherichia coli O157:H7 strain FRIK2533 chromosome, complete genome",3053452..3054678,   stx1a-O157-FLY16,AF461168
+SRR2914455,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP015842.1 Escherichia coli O157:H7 strain FRIK2533 chromosome, complete genome",2819679..2820919,   stx2c-O157-FLY16,AB015057
+SRR6929637,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028652.1 Escherichia coli strain 123 chromosome, complete genome",1795071..1796297,   stx1a-O157-GPU96MM,AB035142
+SRR6929637,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028652.1 Escherichia coli strain 123 chromosome, complete genome",2108693..2109933,   stx2a-O157-EDL933,X07865
+SRR15415540,virulence_ecoli,stx2c-O157-G5101,99.92,1241 / 1241,"NZ_CP038374.1 Escherichia coli O157:H7 strain F3113 chromosome, complete genome",3624120..3625360,   stx2c-O157-G5101,EF441604
+SRR15376143,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062739.1 Escherichia coli O157:H7 strain Z1723 chromosome, complete genome",1559333..1560573,   stx2a-O157-EDL933,X07865
+SRR15376143,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062739.1 Escherichia coli O157:H7 strain Z1723 chromosome, complete genome",2051353..2052593,   stx2c-O157-FLY16,AB015057
+SRR14419375,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP076235.1 Escherichia coli O157:H7 strain 9.1_Anguil chromosome, complete genome",2010746..2011986,   stx2c-O157-FLY16,AB015057
+SRR5413253,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP022050.2 Escherichia coli O157 strain FDAARGOS_293 chromosome, complete genome",4244582..4245808,   stx1a-O157-FLY16,AF461168
+SRR5413253,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP022050.2 Escherichia coli O157 strain FDAARGOS_293 chromosome, complete genome",294611..295851,   stx2c-O157-FLY16,AB015057
+SRR25551086,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133126.1 Escherichia coli O157:H7 strain PNUSAE146131 chromosome, complete genome",1745155..1746381,   stx1a-O157-GPU96MM,AB035142
+SRR25551086,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133126.1 Escherichia coli O157:H7 strain PNUSAE146131 chromosome, complete genome",3401962..3403202,   stx2a-O157-EDL933,X07865
+SRR3224568,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_CP034794.1 Escherichia coli strain 06-3462 chromosome, complete genome",2437875..2439115,   stx2c-O157-E32511,M59432
+SRR14419377,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP076237.1 Escherichia coli O157:H7 strain 146N4 chromosome, complete genome",1801424..1802650,   stx1a-O157-FLY16,AF461168
+SRR14419377,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP076237.1 Escherichia coli O157:H7 strain 146N4 chromosome, complete genome",2002260..2003500,   stx2c-O157-FLY16,AB015057
+DRR381745,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026114.1 Escherichia coli strain CEC01302 chromosome, complete genome",3024646..3025886,   stx2a-O157-EDL933,X07865
+SRR3224814,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP034806.1 Escherichia coli strain 2010C-3347 chromosome, complete genome",3398068..3399294,   stx1a-O157-GPU96MM,AB035142
+SRR3224814,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP034806.1 Escherichia coli strain 2010C-3347 chromosome, complete genome",2550090..2551330,   stx2a-O157-EDL933,X07865
+SRR7460819,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP034792.1 Escherichia coli strain 2009C-3378 chromosome, complete genome",1137892..1139132,   stx2c-O157-FLY16,AB015057
+SRR15415610,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038316.1 Escherichia coli O157:H7 strain NE92 chromosome, complete genome",1961655..1962895,   stx2c-O157-FLY16,AB015057
+SRR10119255,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP040570.1 Escherichia coli O157:H7 strain ECP17-1298 chromosome, complete genome",1744242..1745468,   stx1a-O157-GPU96MM,AB035142
+SRR10119255,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP040570.1 Escherichia coli O157:H7 strain ECP17-1298 chromosome, complete genome",3399911..3401151,   stx2a-O157-EDL933,X07865
+SRR25523643,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP132297.1 Escherichia coli strain PNUSAE145743 chromosome, complete genome",1745155..1746381,   stx1a-O157-GPU96MM,AB035142
+SRR25523643,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP132297.1 Escherichia coli strain PNUSAE145743 chromosome, complete genome",3400650..3401890,   stx2a-O157-EDL933,X07865
+SRR6929635,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028603.1 Escherichia coli strain 144 chromosome, complete genome",1547704..1548930,   stx1a-O157-GPU96MM,AB035142
+SRR4301525,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038284.1 Escherichia coli O157:H7 strain YB14-1 chromosome, complete genome",1982684..1983924,   stx2c-O157-FLY16,AB015057
+SRR15415580,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038408.1 Escherichia coli O157:H7 strain 86-24 chromosome, complete genome",2087205..2088445,   stx2a-O157-EDL933,X07865
+SRR15415538,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038369.1 Escherichia coli O157:H7 strain F6321 chromosome, complete genome",1539766..1540992,   stx1a-O157-GPU96MM,AB035142
+SRR15415538,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038369.1 Escherichia coli O157:H7 strain F6321 chromosome, complete genome",2067274..2068514,   stx2c-O157-FLY16,AB015057
+SRR4301519,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038419.1 Escherichia coli O157:H7 strain 2-6-2 chromosome, complete genome",1802809..1804035,   stx1a-O157-FLY16,AF461168
+SRR4301519,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038419.1 Escherichia coli O157:H7 strain 2-6-2 chromosome, complete genome",2032801..2034041,   stx2c-O157-FLY16,AB015057
+SRR15415574,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP038412.1 Escherichia coli O157:H7 strain 493/89 chromosome, complete genome",3316726..3317966,   stx2a-O157-EDL933,X07865
+SRR15415574,virulence_ecoli,stx2a-ONT-EK9900,99.92,1241 / 1241,"NZ_CP038412.1 Escherichia coli O157:H7 strain 493/89 chromosome, complete genome",3316726..3317966,   stx2a-ONT-EK9900,AF461171
+SRR25603929,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133128.1 Escherichia coli O157:H7 strain PNUSAE146743 chromosome, complete genome",1646099..1647325,   stx1a-O157-GPU96MM,AB035142
+SRR25603929,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133128.1 Escherichia coli O157:H7 strain PNUSAE146743 chromosome, complete genome",5449356..5450596,   stx2a-O157-EDL933,X07865
+SRR4301514,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038324.1 Escherichia coli O157:H7 strain NE 1169-1 chromosome, complete genome",1794097..1795323,   stx1a-O157-GPU96MM,AB035142
+SRR4301514,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038324.1 Escherichia coli O157:H7 strain NE 1169-1 chromosome, complete genome",3444532..3445772,   stx2a-O157-EDL933,X07865
+SRR6929616,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028641.1 Escherichia coli strain 132 chromosome, complete genome",1980300..1981540,   stx2c-O157-FLY16,AB015057
+SRR6929632,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP028596.1 Escherichia coli strain 149 chromosome, complete genome",1550069..1551309,   stx2a-O157-EDL933,X07865
+SRR15415556,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038425.1 Escherichia coli O157:H7 strain 2571 chromosome, complete genome",1543151..1544377,   stx1a-O157-GPU96MM,AB035142
+SRR15415556,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038425.1 Escherichia coli O157:H7 strain 2571 chromosome, complete genome",2067936..2069176,   stx2c-O157-FLY16,AB015057
+SRR3195836,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP017446.1 Escherichia coli O157:H7 strain 9234 chromosome, complete genome",1966050..1967290,   stx2c-O157-FLY16,AB015057
+SRR1509643,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP008957.1 Escherichia coli O157:H7 str. EDL933 chromosome, complete genome",3012809..3014035,   stx1a-O157-GPU96MM,AB035142
+SRR1509643,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP008957.1 Escherichia coli O157:H7 str. EDL933 chromosome, complete genome",1354945..1356185,   stx2a-O157-EDL933,X07865
+DRR381749,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026118.1 Escherichia coli strain CEC13004 chromosome, complete genome",3104434..3105674,   stx2a-O157-EDL933,X07865
+SRR25523645,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP132298.1 Escherichia coli strain PNUSAE145745 chromosome, complete genome",1646098..1647324,   stx1a-O157-GPU96MM,AB035142
+SRR25523645,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP132298.1 Escherichia coli strain PNUSAE145745 chromosome, complete genome",5449433..5450673,   stx2a-O157-EDL933,X07865
+SRR941218,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038355.1 Escherichia coli O157:H7 str. F8092B chromosome, complete genome",1996011..1997251,   stx2c-O157-FLY16,AB015057
+SRR15415557,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038428.1 Escherichia coli O157:H7 strain 611 chromosome, complete genome",2639964..2641190,   stx1a-O157-GPU96MM,AB035142
+SRR15415557,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038428.1 Escherichia coli O157:H7 strain 611 chromosome, complete genome",1049175..1050415,   stx2a-O157-EDL933,X07865
+SRR13160360,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP066753.1 Escherichia coli O157:H7 strain ECP19-598 chromosome, complete genome",1516414..1517654,   stx2a-O157-EDL933,X07865
+SRR13160360,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP066753.1 Escherichia coli O157:H7 strain ECP19-598 chromosome, complete genome",2016074..2017314,   stx2c-O157-FLY16,AB015057
+SRR10506462,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP101522.1 Escherichia coli O157:H7 strain MD2019EC2705C4 chromosome, complete genome",3401761..3403001,   stx2a-O157-EDL933,X07865
+DRR381616,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026087.1 Escherichia coli strain 8_140198 chromosome, complete genome",1261387..1262627,   stx2a-O157-EDL933,X07865
+DRR381616,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026087.1 Escherichia coli strain 8_140198 chromosome, complete genome",3173720..3174960,   stx2a-O157-EDL933,X07865
+DRR381616,virulence_ecoli,stx2a-ONT-EK9900,99.92,1241 / 1241,"NZ_AP026087.1 Escherichia coli strain 8_140198 chromosome, complete genome",1261387..1262627,   stx2a-ONT-EK9900,AF461171
+DRR381616,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_AP026087.1 Escherichia coli strain 8_140198 chromosome, complete genome",2654902..2656142,   stx2c-O157-FLY16,AB015057
+SRR4301574,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,NZ_CP040107.1 Escherichia coli O157:H7 strain MB9-1 chromosome,1979390..1980630,   stx2c-O157-FLY16,AB015057
+SRR4301574,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,NZ_CP040107.1 Escherichia coli O157:H7 strain MB9-1 chromosome,2036802..2038042,   stx2c-O157-FLY16,AB015057
+SRR6929607,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028693.1 Escherichia coli strain 108 chromosome, complete genome",1796159..1797385,   stx1a-O157-GPU96MM,AB035142
+SRR6929607,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028693.1 Escherichia coli strain 108 chromosome, complete genome",3455534..3456774,   stx2a-O157-EDL933,X07865
+SRR4301564,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038414.1 Escherichia coli O157:H7 strain 17B6-2 chromosome, complete genome",1983224..1984464,   stx2c-O157-FLY16,AB015057
+DRR381735,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026106.1 Escherichia coli strain CEC01311 chromosome, complete genome",3019480..3020720,   stx2a-O157-EDL933,X07865
+SRR6929603,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028683.1 Escherichia coli strain 112 chromosome, complete genome",1792359..1793585,   stx1a-O157-GPU96MM,AB035142
+SRR6929604,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028685.1 Escherichia coli strain 111 chromosome, complete genome",1792347..1793573,   stx1a-O157-GPU96MM,AB035142
+DRR381669,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026099.1 Escherichia coli strain 61_150228 chromosome, complete genome",3318540..3319780,   stx2a-O157-EDL933,X07865
+DRR381607,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026085.1 Escherichia coli strain H52_982342 chromosome, complete genome",3107652..3108892,   stx2a-O157-EDL933,X07865
+SRR3180707,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP034801.1 Escherichia coli strain 2010C-3142 chromosome, complete genome",3638336..3639576,   stx2a-O157-EDL933,X07865
+SRR3180707,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP034801.1 Escherichia coli strain 2010C-3142 chromosome, complete genome",4166406..4167646,   stx2c-O157-FLY16,AB015057
+SRR15376147,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062755.1 Escherichia coli O157:H7 strain Z903 chromosome, complete genome",1558015..1559255,   stx2a-O157-EDL933,X07865
+SRR15376147,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062755.1 Escherichia coli O157:H7 strain Z903 chromosome, complete genome",2052669..2053909,   stx2c-O157-FLY16,AB015057
+DRR381603,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026082.1 Escherichia coli strain F765 chromosome, complete genome",3153129..3154369,   stx2a-O157-EDL933,X07865
+SRR15376152,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062766.1 Escherichia coli O157:H7 strain Z866 chromosome, complete genome",1559181..1560421,   stx2a-O157-EDL933,X07865
+SRR15376152,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP062766.1 Escherichia coli O157:H7 strain Z866 chromosome, complete genome",2051204..2052444,   stx2a-O157-EDL933,X07865
+SRR10337442,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP045863.1 Escherichia coli O157:H7 strain ATCC 43890 chromosome, complete genome",2586757..2587983,   stx1a-O157-GPU96MM,AB035142
+SRR14419383,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP076230.1 Escherichia coli O157:H7 strain Rafaela_II chromosome, complete genome",1563424..1564664,   stx2a-O157-EDL933,X07865
+SRR14419383,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_CP076230.1 Escherichia coli O157:H7 strain Rafaela_II chromosome, complete genome",2068161..2069401,   stx2c-O157-E32511,M59432
+SRR4301522,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038300.1 Escherichia coli O157:H7 strain SS TX 754-1 chromosome, complete genome",1979107..1980347,   stx2c-O157-FLY16,AB015057
+SRR6929613,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028620.1 Escherichia coli strain 139 chromosome, complete genome",1980300..1981540,   stx2c-O157-FLY16,AB015057
+DRR381635,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026092.1 Escherichia coli strain 27_141091 chromosome, complete genome",3103568..3104808,   stx2a-O157-EDL933,X07865
+SRR15415613,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038321.1 Escherichia coli O157:H7 strain NE1127 chromosome, complete genome",1794097..1795323,   stx1a-O157-GPU96MM,AB035142
+SRR15415613,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038321.1 Escherichia coli O157:H7 strain NE1127 chromosome, complete genome",3444531..3445771,   stx2a-O157-EDL933,X07865
+SRR8292155,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP034384.1 Escherichia coli O157:H7 strain FRIK804 chromosome, complete genome",3016350..3017576,   stx1a-O157-GPU96MM,AB035142
+SRR8292155,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP034384.1 Escherichia coli O157:H7 strain FRIK804 chromosome, complete genome",1363320..1364560,   stx2a-O157-EDL933,X07865
+SRR6929628,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028671.1 Escherichia coli strain 116 chromosome, complete genome",1980305..1981545,   stx2c-O157-FLY16,AB015057
+SRR6929630,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028665.1 Escherichia coli strain 118 chromosome, complete genome",1980293..1981533,   stx2c-O157-FLY16,AB015057
+SRR4301588,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038305.1 Escherichia coli O157:H7 strain SS NE 1040-1 chromosome, complete genome",2020366..2021606,   stx2c-O157-FLY16,AB015057
+SRR25603927,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133124.1 Escherichia coli O157:H7 strain PNUSAE146742 chromosome, complete genome",1745155..1746381,   stx1a-O157-GPU96MM,AB035142
+SRR25603927,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133124.1 Escherichia coli O157:H7 strain PNUSAE146742 chromosome, complete genome",3401963..3403203,   stx2a-O157-EDL933,X07865
+SRR10119414,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP040572.1 Escherichia coli O157:H7 strain ECP17-46 chromosome, complete genome",1520575..1521815,   stx2a-O157-EDL933,X07865
+DRR381601,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026080.1 Escherichia coli strain F690 chromosome, complete genome",3149760..3151000,   stx2a-O157-EDL933,X07865
+SRR15376154,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062774.1 Escherichia coli O157:H7 strain Z563 chromosome, complete genome",1560522..1561762,   stx2a-O157-EDL933,X07865
+SRR15376154,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062774.1 Escherichia coli O157:H7 strain Z563 chromosome, complete genome",2053855..2055095,   stx2c-O157-FLY16,AB015057
+SRR4301544,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038357.1 Escherichia coli O157:H7 strain F7508 chromosome, complete genome",1833929..1835155,   stx1a-O157-GPU96MM,AB035142
+SRR4301544,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038357.1 Escherichia coli O157:H7 strain F7508 chromosome, complete genome",3479932..3481172,   stx2a-O157-EDL933,X07865
+SRR6929608,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028695.1 Escherichia coli strain 107 chromosome, complete genome",1795014..1796240,   stx1a-O157-GPU96MM,AB035142
+SRR6929608,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028695.1 Escherichia coli strain 107 chromosome, complete genome",3431919..3433159,   stx2a-O157-EDL933,X07865
+SRR3195852,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP017438.1 Escherichia coli O157:H7 strain 2159 chromosome, complete genome",1967334..1968574,   stx2c-O157-FLY16,AB015057
+SRR1714120,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP022689.1 Escherichia coli strain CDC#03-98 chromosome, complete genome",37106..38346,   stx2a-O157-EDL933,X07865
+SRR8192791,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP104645.1 Escherichia coli strain PNUSAE019785 chromosome, complete genome",631652..632892,   stx2a-O157-EDL933,X07865
+SRR8192791,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP104645.1 Escherichia coli strain PNUSAE019785 chromosome, complete genome",93760..95000,   stx2c-O157-FLY16,AB015057
+SRR25510170,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133120.1 Escherichia coli O157:H7 strain PNUSAE145590 chromosome, complete genome",1745155..1746381,   stx1a-O157-GPU96MM,AB035142
+SRR25510170,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP133119.1 Escherichia coli O157:H7 strain PNUSAE145590 plasmid unnamed2, complete sequence",20865..22091,   stx1a-O157-GPU96MM,AB035142
+SRR25510170,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133120.1 Escherichia coli O157:H7 strain PNUSAE145590 chromosome, complete genome",3514493..3515733,   stx2a-O157-EDL933,X07865
+SRR25510170,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP133120.1 Escherichia coli O157:H7 strain PNUSAE145590 chromosome, complete genome",3450472..3451712,   stx2a-O157-EDL933,X07865
+SRR13167188,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP066759.1 Escherichia coli O157:H7 strain ECP19-198 chromosome, complete genome",1743945..1745171,   stx1a-O157-GPU96MM,AB035142
+SRR13167188,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP066759.1 Escherichia coli O157:H7 strain ECP19-198 chromosome, complete genome",3364218..3365458,   stx2a-O157-EDL933,X07865
+SRR2914453,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP015846.1 Escherichia coli O157:H7 strain FRIK2069 chromosome, complete genome",3053463..3054689,   stx1a-O157-FLY16,AF461168
+SRR2914453,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP015846.1 Escherichia coli O157:H7 strain FRIK2069 chromosome, complete genome",2819681..2820921,   stx2c-O157-FLY16,AB015057
+SRR15415555,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038423.1 Escherichia coli O157:H7 strain 7409 chromosome, complete genome",2020329..2021569,   stx2c-O157-FLY16,AB015057
+SRR15415532,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038282.1 Escherichia coli O157:H7 strain F8492 chromosome, complete genome",1836485..1837711,   stx1a-O157-FLY16,AF461168
+SRR15415532,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038282.1 Escherichia coli O157:H7 strain F8492 chromosome, complete genome",2064894..2066134,   stx2c-O157-FLY16,AB015057
+SRR15415549,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038405.1 Escherichia coli O157:H7 strain ATCC 35150 chromosome, complete genome",1793617..1794843,   stx1a-O157-GPU96MM,AB035142
+SRR15415549,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038405.1 Escherichia coli O157:H7 strain ATCC 35150 chromosome, complete genome",3448737..3449977,   stx2a-O157-EDL933,X07865
+SRR3205742,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP034803.1 Escherichia coli strain 2009C-3554 chromosome, complete genome",4856313..4857539,   stx1a-O157-GPU96MM,AB035142
+SRR3205742,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP034803.1 Escherichia coli strain 2009C-3554 chromosome, complete genome",1015523..1016763,   stx2a-O157-EDL933,X07865
+SRR6929615,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028644.1 Escherichia coli strain 131 chromosome, complete genome",1980414..1981654,   stx2c-O157-FLY16,AB015057
+SRR4301569,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038290.1 Escherichia coli O157:H7 strain TX 265-1 chromosome, complete genome",1797994..1799220,   stx1a-O157-FLY16,AF461168
+SRR4301569,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038290.1 Escherichia coli O157:H7 strain TX 265-1 chromosome, complete genome",2025524..2026764,   stx2c-O157-FLY16,AB015057
+SRR15376150,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062763.1 Escherichia coli O157:H7 strain Z885 chromosome, complete genome",1557996..1559236,   stx2a-O157-EDL933,X07865
+SRR15376150,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062763.1 Escherichia coli O157:H7 strain Z885 chromosome, complete genome",2050419..2051659,   stx2c-O157-FLY16,AB015057
+SRR14419387,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP076245.1 Escherichia coli O157:H7 strain Balcarce_24.2 chromosome, complete genome",1797625..1798865,   stx2a-O157-EDL933,X07865
+SRR14419387,virulence_ecoli,stx2a-ONT-EK9900,99.92,1241 / 1241,"NZ_CP076245.1 Escherichia coli O157:H7 strain Balcarce_24.2 chromosome, complete genome",1797625..1798865,   stx2a-ONT-EK9900,AF461171
+SRR14419387,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP076245.1 Escherichia coli O157:H7 strain Balcarce_24.2 chromosome, complete genome",1989423..1990663,   stx2c-O157-FLY16,AB015057
+DRR381701,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026101.1 Escherichia coli strain 93_161312 chromosome, complete genome",3211790..3213030,   stx2a-O157-EDL933,X07865
+DRR381701,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_AP026101.1 Escherichia coli strain 93_161312 chromosome, complete genome",2683213..2684453,   stx2c-O157-E32511,M59432
+SRR6929617,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028638.1 Escherichia coli strain 133 chromosome, complete genome",1980300..1981540,   stx2c-O157-FLY16,AB015057
+SRR7896257,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP031913.1 Escherichia coli O157:H7 strain FWSEC0004 chromosome, complete genome",1744044..1745270,   stx1a-O157-GPU96MM,AB035142
+SRR7896257,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP031913.1 Escherichia coli O157:H7 strain FWSEC0004 chromosome, complete genome",3351233..3352473,   stx2a-O157-EDL933,X07865
+SRR15674630,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP082835.1 Escherichia coli strain 1613 chromosome, complete genome",2947219..2948445,   stx1a-O157-FLY16,AF461168
+SRR15674630,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP082835.1 Escherichia coli strain 1613 chromosome, complete genome",2718724..2719964,   stx2c-O157-FLY16,AB015057
+SRR3195841,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP017442.1 Escherichia coli O157:H7 strain 4276 chromosome, complete genome",1966170..1967410,   stx2c-O157-FLY16,AB015057
+SRR6929611,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028609.1 Escherichia coli strain 142 chromosome, complete genome",1795099..1796325,   stx1a-O157-GPU96MM,AB035142
+SRR6929611,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028609.1 Escherichia coli strain 142 chromosome, complete genome",3419595..3420835,   stx2a-O157-EDL933,X07865
+DRR381634,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026090.1 Escherichia coli strain 26_141088 chromosome, complete genome",3098182..3099422,   stx2a-O157-EDL933,X07865
+SRR15376151,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP062782.1 Escherichia coli O157:H7 strain Z869 chromosome, complete genome",1556234..1557474,   stx2a-O157-EDL933,X07865
+SRR15376151,virulence_ecoli,stx2c-O157-FLY16,99.92,1241 / 1241,"NZ_CP062782.1 Escherichia coli O157:H7 strain Z869 chromosome, complete genome",2089740..2090980,   stx2c-O157-FLY16,AB015057
+SRR6929633,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP028598.1 Escherichia coli strain 148 chromosome, complete genome",1550009..1551249,   stx2a-O157-EDL933,X07865
+DRR381744,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_AP026112.1 Escherichia coli strain CEC03102 chromosome, complete genome",3175091..3176331,   stx2a-O157-EDL933,X07865
+SRR15415539,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038372.1 Escherichia coli O157:H7 strain F6294 chromosome, complete genome",1793617..1794843,   stx1a-O157-GPU96MM,AB035142
+SRR15415539,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038372.1 Escherichia coli O157:H7 strain F6294 chromosome, complete genome",3583557..3584797,   stx2a-O157-EDL933,X07865
+SRR15415539,virulence_ecoli,stx2d-O55-5905,98.95,1241 / 1241,"NZ_CP038372.1 Escherichia coli O157:H7 strain F6294 chromosome, complete genome",2177169..2178409,   stx2d-O55-5905,EF441605
+SRR15415539,virulence_ecoli,stx2d-OR-TS06-08,98.95,1241 / 1241,"NZ_CP038372.1 Escherichia coli O157:H7 strain F6294 chromosome, complete genome",2177169..2178409,   stx2d-OR-TS06-08,FM998848
+DRR381723,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026104.1 Escherichia coli strain CEC96047 chromosome, complete genome",3088972..3090212,   stx2a-O157-EDL933,X07865
+DRR381723,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_AP026104.1 Escherichia coli strain CEC96047 chromosome, complete genome",2567144..2568384,   stx2c-O157-FLY16,AB015057
+SRR13160357,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP066748.1 Escherichia coli O157:H7 strain ECP19-2498 chromosome, complete genome",1757843..1759069,   stx1a-O157-FLY16,AF461168
+SRR13160357,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP066748.1 Escherichia coli O157:H7 strain ECP19-2498 chromosome, complete genome",1987830..1989070,   stx2c-O157-FLY16,AB015057
+SRR6929636,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028650.1 Escherichia coli strain 124 chromosome, complete genome",1796176..1797402,   stx1a-O157-GPU96MM,AB035142
+SRR6929636,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028650.1 Escherichia coli strain 124 chromosome, complete genome",2099298..2100538,   stx2a-O157-EDL933,X07865
+SRR6373397,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP035545.1 Escherichia coli strain FSIS11705876 chromosome, complete genome",3181211..3182451,   stx2a-O157-EDL933,X07865
+SRR6373397,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP035545.1 Escherichia coli strain FSIS11705876 chromosome, complete genome",2652235..2653475,   stx2c-O157-FLY16,AB015057
+SRR6929605,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028687.1 Escherichia coli strain 110 chromosome, complete genome",1795014..1796240,   stx1a-O157-GPU96MM,AB035142
+SRR6929605,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028687.1 Escherichia coli strain 110 chromosome, complete genome",3431919..3433159,   stx2a-O157-EDL933,X07865
+SRR6929625,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028662.1 Escherichia coli strain 119 chromosome, complete genome",1980294..1981534,   stx2c-O157-FLY16,AB015057
+SRR5870510,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP104649.1 Escherichia coli strain PNUSAE008512 chromosome, complete genome",1975841..1977081,   stx2a-O157-EDL933,X07865
+SRR5870510,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP104649.1 Escherichia coli strain PNUSAE008512 chromosome, complete genome",1446474..1447714,   stx2c-O157-FLY16,AB015057
+DRR381661,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026095.1 Escherichia coli strain 53_142304 chromosome, complete genome",1530611..1531851,   stx2a-O157-EDL933,X07865
+DRR381661,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_AP026095.1 Escherichia coli strain 53_142304 chromosome, complete genome",2051948..2053188,   stx2c-O157-E32511,M59432
+DRR381665,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_AP026097.1 Escherichia coli strain 57_142493 chromosome, complete genome",3168377..3169617,   stx2a-O157-EDL933,X07865
+DRR381665,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_AP026097.1 Escherichia coli strain 57_142493 chromosome, complete genome",2635053..2636293,   stx2c-O157-E32511,M59432
+SRR4301554,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038344.1 Escherichia coli O157:H7 strain Gim1-1 chromosome, complete genome",1965367..1966607,   stx2c-O157-FLY16,AB015057
+SRR6929622,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028592.1 Escherichia coli strain 150 chromosome, complete genome",1547734..1548960,   stx1a-O157-GPU96MM,AB035142
+SRR6929622,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028592.1 Escherichia coli strain 150 chromosome, complete genome",2042558..2043798,   stx2c-O157-FLY16,AB015057
+SRR6929623,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028607.1 Escherichia coli strain 143 chromosome, complete genome",1845076..1846302,   stx1a-O157-GPU96MM,AB035142
+SRR6929623,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP028607.1 Escherichia coli strain 143 chromosome, complete genome",3548342..3549582,   stx2a-O157-EDL933,X07865
+SRR15415542,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038376.1 Escherichia coli O157:H7 strain F1273 chromosome, complete genome",3501789..3503029,   stx2c-O157-FLY16,AB015057
+SRR3180501,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP034808.1 Escherichia coli strain 08-3914 chromosome, complete genome",3642838..3644078,   stx2a-O157-EDL933,X07865
+SRR3180501,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_CP034808.1 Escherichia coli strain 08-3914 chromosome, complete genome",4171406..4172646,   stx2c-O157-E32511,M59432
+SRR15415554,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038421.1 Escherichia coli O157:H7 strain 7636 chromosome, complete genome",1792394..1793620,   stx1a-O157-FLY16,AF461168
+SRR15415554,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038421.1 Escherichia coli O157:H7 strain 7636 chromosome, complete genome",2019570..2020810,   stx2c-O157-FLY16,AB015057
+SRR3180502,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP034797.1 Escherichia coli strain 08-3918 chromosome, complete genome",1424029..1425269,   stx2a-O157-EDL933,X07865
+SRR6929621,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028626.1 Escherichia coli strain 137 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR6929626,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP028654.1 Escherichia coli strain 122 chromosome, complete genome",1793722..1794948,   stx1a-O157-GPU96MM,AB035142
+SRR5864678,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP104647.1 Escherichia coli strain PNUSAE008406 chromosome, complete genome",646385..647625,   stx2a-O157-EDL933,X07865
+SRR5864678,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP104647.1 Escherichia coli strain PNUSAE008406 chromosome, complete genome",117002..118242,   stx2c-O157-FLY16,AB015057
+SRR4301548,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP038360.1 Escherichia coli O157:H7 strain F7386 chromosome, complete genome",1550153..1551393,   stx2a-O157-EDL933,X07865
+SRR4301513,virulence_ecoli,stx1-S.-sonnei-CB7888,99.92,1227 / 1227,"NZ_CP038328.1 Escherichia coli O157:H7 strain NE 1092-2 chromosome, complete genome",1572351..1573577,   stx1-S.-sonnei-CB7888,AJ279086
+SRR4301513,virulence_ecoli,stx1a-O157-GPU96MM,99.92,1227 / 1227,"NZ_CP038328.1 Escherichia coli O157:H7 strain NE 1092-2 chromosome, complete genome",1572351..1573577,   stx1a-O157-GPU96MM,AB035142
+SRR4301513,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038328.1 Escherichia coli O157:H7 strain NE 1092-2 chromosome, complete genome",2073983..2075223,   stx2c-O157-FLY16,AB015057
+SRR15415611,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038319.1 Escherichia coli O157:H7 strain NE122 chromosome, complete genome",1981875..1983115,   stx2c-O157-FLY16,AB015057
+SRR4301555,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038416.1 Escherichia coli O157:H7 strain 3-5-1 chromosome, complete genome",1568640..1569880,   stx2a-O157-EDL933,X07865
+SRR10520171,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP045975.1 Escherichia coli strain AUSMDU00002545 chromosome, complete genome",1499066..1500292,   stx1a-O157-GPU96MM,AB035142
+SRR10520171,virulence_ecoli,stx2c-O157-FLY16,100,1206 / 1241,"NZ_CP045975.1 Escherichia coli strain AUSMDU00002545 chromosome, complete genome",1976060..1977265,   stx2c-O157-FLY16,AB015057
+SRR14419379,virulence_ecoli,stx2a-O157-EDL933,99.92,1241 / 1241,"NZ_CP076241.1 Escherichia coli O157:H7 strain Vac_07.1 chromosome, complete genome",1566120..1567360,   stx2a-O157-EDL933,X07865
+SRR14419379,virulence_ecoli,stx2c-O157-E32511,99.92,1241 / 1241,"NZ_CP076241.1 Escherichia coli O157:H7 strain Vac_07.1 chromosome, complete genome",2087501..2088741,   stx2c-O157-E32511,M59432
+SRR6929624,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028659.1 Escherichia coli strain 120 chromosome, complete genome",1980444..1981684,   stx2c-O157-FLY16,AB015057
+SRR6929639,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP028617.1 Escherichia coli strain 140 chromosome, complete genome",1980450..1981690,   stx2c-O157-FLY16,AB015057
+SRR4301579,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038333.1 Escherichia coli O157:H7 strain N8B7-2 chromosome, complete genome",2025916..2027156,   stx2c-O157-FLY16,AB015057
+SRR4301527,virulence_ecoli,stx1a-O157-FLY16,100,1227 / 1227,"NZ_CP038402.1 Escherichia coli O157:H7 strain BB24-1 chromosome, complete genome",1809207..1810433,   stx1a-O157-FLY16,AF461168
+SRR4301527,virulence_ecoli,stx2c-O157-FLY16,100,1241 / 1241,"NZ_CP038402.1 Escherichia coli O157:H7 strain BB24-1 chromosome, complete genome",2040532..2041772,   stx2c-O157-FLY16,AB015057
+SRR4301531,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP038363.1 Escherichia coli O157:H7 strain F7349 chromosome, complete genome",1796388..1797614,   stx1a-O157-GPU96MM,AB035142
+SRR4301531,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP038363.1 Escherichia coli O157:H7 strain F7349 chromosome, complete genome",3450764..3452004,   stx2a-O157-EDL933,X07865
+SRR3195765,virulence_ecoli,stx1a-O157-GPU96MM,100,1227 / 1227,"NZ_CP017440.1 Escherichia coli O157:H7 strain 3384 chromosome, complete genome",1796349..1797575,   stx1a-O157-GPU96MM,AB035142
+SRR3195765,virulence_ecoli,stx2a-O157-EDL933,100,1241 / 1241,"NZ_CP017440.1 Escherichia coli O157:H7 strain 3384 chromosome, complete genome",3430318..3431558,   stx2a-O157-EDL933,X07865
