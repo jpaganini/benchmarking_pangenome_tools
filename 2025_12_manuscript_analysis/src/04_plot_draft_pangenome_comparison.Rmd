@@ -96,32 +96,21 @@ ppanggolin_abundances_filt$fraction_isolates <- round(ppanggolin_abundances_filt
 ppanggolin_abundances_filt$Tool <- "PPanGGOLiN"
 
 
-# pangraph_abundances_filt<- read.csv("../../2024_01_pangenome_constructions/results/pangenome_graph/pure_complete/abundances/pangraph_abundances.tsv")
-# pangraph_abundances_filt<-pangraph_abundances_filt[,c(1,4,5)]
-# pangraph_abundances_missing_filt<- read.csv("../../2024_01_pangenome_constructions/results/pangenome_graph/pure_complete/abundances/pangraph_abundances_missing.tsv")
-# pangraph_abundances_missing_filt<-pangraph_abundances_missing_filt[,c(1,3,4)]
-# pangraph_abundances_filt<-rbind(pangraph_abundances_filt,pangraph_abundances_missing_filt)
-# names(pangraph_abundances_filt) <- c("node_id","n_isolates","fraction_isolates")
-# pangraph_abundances_filt$Tool <- "Pangraph"
-
-
 all_abundances <- rbind(
   bifrost_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")],
   cuttlefish_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")],
   ggcaller_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")],
   panaroo_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")],
   ppanggolin_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")])
-  # pangraph_abundances_filt[, c("node_id","n_isolates","fraction_isolates","Tool")]
 
 
 
 all_complete_data<-left_join(all_complete_data,all_abundances,by=c("Tool","node_id"))
 
-#write.csv(all_complete_data, '../results/Supplementary_table_S6.csv',  row.names = FALSE)
 
 ```
 
-#2. Figure 3A - Differences in basic graph structure
+#2. Figure 3 - Differences in basic graph structure
 
 ```{r fig.width=7,fig.height=4, dpi=300}
 agd<-read.csv("../results/pangenome_parsed/06_aggregated_data/basic_information.csv", check.names = FALSE, stringsAsFactors = FALSE)
@@ -202,7 +191,7 @@ diff_df <- diff_df %>%
     )
   )
 
-#write.csv(diff_df, '../results/Supplementary_table_S7.csv',  row.names = FALSE)
+#write.csv(diff_df, '../results/Supplementary_table_S6.csv',  row.names = FALSE)
 
 # 5) Plot
 ggplot(diff_df, aes(x = pct_complete, y = pct_change, fill = direction)) +
@@ -290,7 +279,7 @@ ggplot(df_bins, aes(x = degree_bin, y = frac_bin, fill = count_norm)) +
   )
 ```
 
-##3.1 Differences in node-degree distribution 
+##3.1 Supplementary Figure S2 - Differences in node-degree distribution 
 
 ```{r}
 complete_genome_node_abundance<- read.csv("../results/IMPORTANT_complete_node_degree_normalized_tool.csv")
@@ -603,6 +592,7 @@ p_bar
 p_bar<-p_bar+ guides(fill = "none")
 ```
 
+##3.7 Figure 4 
 ```{r fig.width=6, fig.height=14, dpi=300}
 combined <- p_heat + p_bar +
   plot_layout(
@@ -618,7 +608,7 @@ combined
 
 #4. CPU and TIme usage
 
-##1. Import and wrangle data
+##4.1. Figure 5
 ```{r fig.width=6,fig.height=4, dpi=300}
 
 base <- read.csv("../../2024_01_pangenome_constructions/results/cpu_performance/Cup_time_memory.csv")

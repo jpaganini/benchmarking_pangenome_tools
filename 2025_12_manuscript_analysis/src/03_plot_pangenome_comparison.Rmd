@@ -107,7 +107,7 @@ all_abundances <- rbind(
 
 all_complete_data<-left_join(all_complete_data,all_abundances,by=c("Tool","node_id"))
 
-#write.csv(all_complete_data, '../results/Supplementary_table_S6.csv',  row.names = FALSE)
+
 
 ```
 

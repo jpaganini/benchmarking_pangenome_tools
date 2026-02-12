@@ -26,7 +26,7 @@ stx_cog_summary_raw <- read.csv("../../2025_01_stx_analysis/results/merged_all.c
   select(-matches("1%complete|99%complete"))
 
 #2. Import stx-metadata
-all_metadata <- read.csv("../results/Supplementary_table_S2_all_metadata.csv",check.names=FALSE)
+all_metadata <- read.csv("../results/Supplementary_table_S2.csv",check.names=FALSE)
 
 ```
 
@@ -89,7 +89,7 @@ long_mat <- stx_cog_summary_raw %>%
 #Add metadata
 long_mat<-left_join(long_mat,all_metadata[,c(26,29)],by=c("Isolate"="SRA"))
 
-write.csv(long_mat, '../results/Supplementary_table_S7.csv',  row.names = FALSE)
+#write.csv(long_mat, '../results/Supplementary_table_S7.csv',  row.names = FALSE)
 
 ```
 
@@ -183,7 +183,7 @@ metrics_summary <- metrics_summary %>%
 #write.csv(metrics_summary, '../results/tmp_summary_stx.csv',  row.names = FALSE)
 ```
 
-#Plot
+## Figure 6
 ```{r fig.width=7,fig.height=4, dpi=300}
 
 prep_plot_df <- function(df) {
@@ -268,60 +268,4 @@ fragmentation_summary_stxtype<-stx_cog_summary_subunit %>% group_by(fragmentatio
 ```
 
 
-```{r}
-plot_df <- metrics_summary %>%
-  mutate(
-    complete_genomes = factor(complete_genomes, levels = c(0, 10, 50, 90, 100)),
-    fragmentation_status = factor(
-      fragmentation_status,
-      levels = c("Collapsed stx", "Complete stx", "Fragmented stx")
-    )
-  ) %>%
-  pivot_longer(
-    cols = c(precision, recall),
-    names_to = "metric",
-    values_to = "value"
-  ) %>%
-  mutate(metric = recode(metric,
-                         precision = "Precision",
-                         recall    = "Recall"))
-
-pd <- position_dodge(width = 0.45)
-
-plot_one_stx <- function(df, stx_value, title_label) {
-  ggplot(
-    df %>% filter(Stx_type == stx_value),
-    aes(
-      x = complete_genomes,
-      y = value,
-      color = Tool
-    )
-  ) +
-    geom_point(
-      position = pd,
-      size = 2.4
-    ) +
-    facet_grid(metric ~ fragmentation_status, drop = TRUE) +
-    coord_cartesian(ylim = c(0, 1)) +
-    labs(
-      title = title_label,
-      x = "% complete genomes",
-      y = NULL
-    ) +
-    theme_bw() +
-    theme(
-      plot.title   = element_text(face = "bold"),
-      strip.text   = element_text(face = "bold"),
-      axis.title.x = element_text(face = "bold")
-    )
-}
-
-p_stxA <- plot_one_stx(plot_df, "stx_A", "stx_A")
-p_stxB <- plot_one_stx(plot_df, "stx_B", "stx_B")
-
-p_stxA
-p_stxB
-
-
-```
 
