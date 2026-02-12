@@ -36,7 +36,7 @@ mlst_all_raw <- read.csv("../../2023_11_general_genomics/results/mlst/all_mlst_n
 
 
 #4. Import conversion fle
-ncbi_sra_relation <- read.csv("../../2023_10_raw_data/results/stec_info/biosample_strains_o157_h7.csv", sep=",", header=FALSE)
+ncbi_sra_relation <- read.csv("../../2023_10_raw_data/results/stec_info/biosample_strains_o157_h7_mod.csv", sep=",", header=FALSE)
 
 #5. Import final list of isolates
 benchmark_list_raw<- read.csv("../../2023_11_general_genomics/results/benchmark_isolate_list.txt", sep=",", header=FALSE)
@@ -267,7 +267,7 @@ colnames(all_metadata)[26:27] <- c("SRA", "Biosample")
 #Add jellyfish data
 all_metadata<-left_join(all_metadata,jellyfish_raw,by=c("isolate"="genome"))
 
-#write.csv(all_metadata, '../results/Supplementary_table_S2_all_metadata.csv',  row.names = FALSE)
+#write.csv(all_metadata, '../results/Supplementary_table_S2.csv',  row.names = FALSE)
 ```
 
 
@@ -349,40 +349,5 @@ repeat_distribution_total
 
 ```
 
-###9. Plot More repeats data
-```{r fig.width=5, fig.height=3, dpi=300}
 
-repeat_data_long <- repeat_data %>%
-  pivot_longer(
-    cols = -c(isolate, Serotype, Serotype_plot),
-    names_to = "metric",
-    values_to = "value"
-  )
-
-
-repeat_distribution <- ggplot(repeat_data_long, 
-                        aes(x = Serotype_plot, y = as.numeric(value))) +
-  geom_violin(aes(fill = Serotype_plot),alpha = 0.8, trim = TRUE,scale = "width") +
-  geom_boxplot(position = position_dodge(width = 0.8), width = 0.2,outlier.shape = NA) +
-  coord_cartesian(ylim = c(0, 0.3)) +
-  #geom_jitter(aes(color = dot_colour), alpha = 0.3, position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.8)) +
-  theme_bw() +
-  # Uncomment and customize color if needed
-  scale_fill_manual(values = c('O157:H7' = '#33A02C','Other' = '#D9D9D9')) +
-  theme(
-    plot.title = element_text(size = 0, hjust = 0.5, face = 'bold'),
-    axis.title.x = element_text(size = 18, face = 'bold'), 
-    axis.text.x = element_text(size = 16, angle = 0),
-    axis.title.y = element_text(size = 18, face = "bold"), 
-    axis.text.y = element_text(size = 16),
-    legend.title = element_text(size = 0), 
-    legend.text = element_text(size = 18), 
-    legend.position = 'none'
-  ) +
-  xlab('Serotype') + 
-  ylab('Value')+
-  facet_wrap(~ metric, scales="fixed") + theme(strip.text.x = element_text(size = 14))
-
-repeat_distribution
-```
 
