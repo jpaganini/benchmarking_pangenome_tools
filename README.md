@@ -37,7 +37,9 @@ Run **2025_12_manuscript_analysis/src/04_plot_draft_pangenome_comparison.Rmd** t
 
 
 Run **2025_12_manuscript_analysis/src/05_stx_recovery.Rmd** to reproduce:
+
 -Fugure 6
+
 -Supplementary table S7
 
 
