@@ -1,0 +1,2 @@
+#!/bin/bash
+    blastn -db /hpc/uu_vet_iras/pliu/remove_bad_result/2024_5_1_blast_stx/database/M59432     -query /hpc/uu_vet_iras/pliu/remove_bad_result/assembly_remove_bad/DRR381665_assembly.fasta     -out /hpc/uu_vet_iras/pliu/remove_bad_result/2024_5_1_blast_stx/result/DRR381665+M59432.csv -perc_identity 99 -qcov_hsp_perc 0.1 -outfmt "6 qseqid sseqid qstart qend sstart ssend evalue length pident qcovs mismatch gaps"
