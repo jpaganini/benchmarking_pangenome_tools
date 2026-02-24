@@ -116,7 +116,7 @@ all_complete_data<-left_join(all_complete_data,all_abundances,by=c("Tool","node_
 
 ###2.1 Figure 2A - Node length distribution
 
-```{r fig.width=4, fig.height=5, dpi=300}
+```{r fig.width=4, fig.height=4, dpi=300}
 #Plot node-length
 node_length_distribution <- ggplot(all_complete_data, 
                         aes(x = Tool, y = log(length,10))) +
@@ -152,7 +152,7 @@ node_length_dist<-all_complete_data %>% group_by(Tool) %>% summarise(min=min(len
 ```
 
 ###2.3 Figure 2B (top) - Subgraph size cummulative plot
-```{r fig.width=4, fig.height=3, dpi=300}
+```{r fig.width=4, fig.height=2, dpi=300}
 subgraph_compositions<-all_complete_data %>% group_by(Tool,subgraph_id) %>% summarise(nr_nodes=n(),subgraph_length=sum(length))
 
 subgraph_compositions <- subgraph_compositions %>%
@@ -184,7 +184,7 @@ ggplot(cdf_data, aes(x = rank, y = cum_frac_nodes, colour = Tool)) +
   geom_line(size = 1.2, alpha = 0.9) +
   scale_y_continuous(
     labels = scales::percent_format(accuracy = 1),
-    name   = "Cumulative fraction of total graph content"
+    name   = "Cumulative (%) of total graph"
   ) +
   scale_colour_manual(values = c('PPanGGOLiN' = '#FF6600','Panaroo' = '#E00000', "ggCaller"="#D9EB00","Bifrost"="#00BF2F", "Cuttlefish"="#57A303", "Pangraph"="#1F02D4")) +
   labs(
@@ -235,7 +235,7 @@ ggplot(largest_component, aes(x = Tool, y = largest_frac, fill = Tool)) +
     expand = expansion(mult = c(0, 0.1))  # gives space above bars for the text
   ) +
   labs(
-    y = "Fraction (Nodes) in largest subgraph",
+    y = "%(nodes) in largest subgraph",
     x = "",
     title = ""
   ) +
@@ -430,7 +430,7 @@ ggplot(df_bins, aes(x = degree_bin, y = frac_bin, fill = count_norm)) +
 ###2.8 Figure 2C - Node degree and frequency, normalized per node-degree
 
 
-```{r fig.width=9, fig.height=5, dpi=300}
+```{r fig.width=11, fig.height=7, dpi=300}
 bins <- seq(0, 1, by = 0.05)
 
 df <- all_complete_data %>%
@@ -485,26 +485,39 @@ df_bins_node$Tool <- factor(
 
 
 # Plot
+
 ggplot(df_bins_node, aes(x = degree_bin, y = frac_bin, fill = count_norm)) +
   geom_tile() +
   scale_fill_viridis_c(
     name = "Node fraction\n(Degree normalized)",
-    limits = c(0, NA)
+    limits = c(0, NA),
+    guide = guide_colorbar(
+      barheight = unit(5, "cm"),   # height of the color bar
+      barwidth  = unit(0.8, "cm"), # width of the color bar
+      title.position = "top",
+      title.hjust = 0.5
+    )
   ) +
   scale_x_continuous(breaks = 0:10, name = "Node degree") +
   ylab("Fraction of isolates") +
   facet_wrap(~Tool) +
   theme_bw() +
   theme(
-    axis.title.x = element_text(size = 16, face = "bold"),
-    axis.text.x = element_text(size = 12),
-    axis.title.y = element_text(size = 16, face = "bold"),
-    axis.text.y = element_text(size = 10),
+    axis.title.x = element_text(size = 28, face = "bold"),
+    axis.text.x = element_text(size = 20),
+    axis.title.y = element_text(size = 28, face = "bold"),
+    axis.text.y = element_text(size = 16),
     panel.grid = element_blank(),
-    strip.text = element_text(size=16,face = "bold")
+    strip.text = element_text(size=24,face = "bold"),
+    
+    legend.title = element_text(size = 18, face = "bold", margin = margin(b = 15)),
+    legend.text  = element_text(size = 14),
+    legend.key.height = unit(1.2, "cm"),  # affects spacing, optional
+    legend.key.width  = unit(0.8, "cm")
   )
-
 ```
+
+
 
 
 
