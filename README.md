@@ -3,7 +3,7 @@
 
 Run **2025_12_manuscript_analysis/src/01_STEC_data_analysis.Rmd** to reproduce:
 
--Figure 1
+-Supplementary Figure S1
 
 -Supplementary Table S2
 
@@ -12,9 +12,9 @@ Run **2025_12_manuscript_analysis/src/01_STEC_data_analysis.Rmd** to reproduce:
 
 Run **2025_12_manuscript_analysis/src/03_plot_pangenome_comparison.Rmd** to reproduce:
 
--Figure 2
+-Figure 1
 
--Supplementary Figure S1
+-Supplementary Figure S2
 
 -Supplementary table S3
 
@@ -25,22 +25,23 @@ Run **2025_12_manuscript_analysis/src/03_plot_pangenome_comparison.Rmd** to repr
 
 Run **2025_12_manuscript_analysis/src/04_plot_draft_pangenome_comparison.Rmd** to reproduce:
 
+-Figure 2
+
 -Figure 3
 
 -Figure 4
 
--Figure 5
-
--Supplementary Figure S2
+-Supplementary Figure S3
 
 -Supplementary table S6
 
+-Supplementary table S7
 
 Run **2025_12_manuscript_analysis/src/05_stx_recovery.Rmd** to reproduce:
 
--Fugure 6
+-Fugure 5
 
--Supplementary table S7
+-Supplementary table S8
 
 
 ### If required, all pangenome graphs can be downloaded from:
