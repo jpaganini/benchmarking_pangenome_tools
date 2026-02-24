@@ -30,6 +30,7 @@ all_metadata <- read.csv("../results/Supplementary_table_S2.csv",check.names=FAL
 
 ```
 
+##2.1 Supplementary Table S8
 
 ```{r}
 #categorized stx-genes as fragmented, collapsed or complete
@@ -89,7 +90,7 @@ long_mat <- stx_cog_summary_raw %>%
 #Add metadata
 long_mat<-left_join(long_mat,all_metadata[,c(26,29)],by=c("Isolate"="SRA"))
 
-#write.csv(long_mat, '../results/Supplementary_table_S7.csv',  row.names = FALSE)
+#write.csv(long_mat, '../results/Supplementary_table_S8.csv',  row.names = FALSE)
 
 ```
 
