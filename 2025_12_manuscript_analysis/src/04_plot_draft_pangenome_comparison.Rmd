@@ -478,13 +478,13 @@ ggplot(
 
 
 ##3.5 Difference in node abudannce (draft vs complete) / normalize by whole graph
-
+#Supplementary Table S7
 ```{r fig.width=4, fig.height=14, dpi=300}
 
 #export a tmp table to describe the results
 tmp_node_abundance_difference_per_bin<-node_degree_abundance_difference[,c(1,2,3,8,13,15)]
 
-#write.csv(tmp_node_abundance_difference_per_bin, '../results/TMP_node_abundance_difference.csv',  row.names = FALSE)
+write.csv(tmp_node_abundance_difference_per_bin, '../results/Supplementary_table_S7.csv',  row.names = FALSE)
 
 p_heat<-ggplot(
   node_degree_abundance_difference,
